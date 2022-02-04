@@ -500,12 +500,31 @@ button {
   transform: rotate(-40deg);
 }
 
+.fixed-phone {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #33BB83;
+  box-shadow: 0px 12px 34px -5px rgba(0, 173, 102, 0.25);
+  z-index: 999;
+}
+.fixed-phone img {
+  width: 30px;
+  height: 30px;
+}
+
 .svg-star-dims {
   width: 10px;
   height: 10px;
 }
 
-.svg-call-dims, .svg-location-dims {
+.svg-call-dims,
+.svg-location-dims {
   width: 22px;
   height: 22px;
 }

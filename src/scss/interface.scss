@@ -15,12 +15,15 @@ button {
   color: #FDFFF8;
   border-radius: 39px;
   transition: background-color .3s;
+
   &__green {
     background: #33BB83;
+
     &:hover {
       background-color: #31D491;
     }
   }
+
   &__location {
     color: #283505;
     padding-top: 20px;
@@ -37,16 +40,19 @@ button {
     background-repeat: no-repeat;
     background-size: 27%;
     background-position: left center;
+
     &_mobile {
       display: none;
     }
   }
+
   &-menu {
     position: relative;
     display: none;
     width: 40px;
     height: 40px;
     padding: 0 6px;
+
     &__line {
       position: absolute;
       top: 12px;
@@ -58,16 +64,19 @@ button {
       border-radius: 2px;
       transform-origin: center;
       transition: transform .2s, top .2s;
+
       &:nth-child(2) {
         top: 27px;
       }
     }
+
     &_active {
       .btn-menu__line {
         &:nth-child(1) {
           top: 50%;
           transform: rotate(40deg);
         }
+
         &:nth-child(2) {
           top: 50%;
           transform: rotate(-40deg);
@@ -77,12 +86,32 @@ button {
   }
 }
 
+.fixed-phone {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #33BB83;
+  box-shadow: 0px 12px 34px -5px rgba(0, 173, 102, 0.25);
+  z-index: 999;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .svg-star-dims {
   width: 10px;
   height: 10px;
 }
 
-.svg-call-dims, .svg-location-dims {
+.svg-call-dims,
+.svg-location-dims {
   width: 22px;
   height: 22px;
 }
