@@ -31,7 +31,7 @@ export default function menu (btnSelector) {
     if (window.screen.width > 960) {
       document.querySelector('.nav').classList.remove('hideMenu');
     }
-    if (window.screen.width > 960) {
+    if (window.screen.width > 960 || menuBtn.classList.contains('btn-menu_active')) {
       document.querySelector('.header__logo_mobile').style.display = 'none';
     } else {
       document.querySelector('.header__logo_mobile').style.display = 'inherit';
