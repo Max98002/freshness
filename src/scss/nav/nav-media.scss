@@ -3,21 +3,30 @@
     position: absolute;
     top: 96px;
     left: -100%;
-    opacity: 0;
-    width: 100%;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    justify-content: flex-start;
+    height: calc(100vh - 97px);
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
     background: #F7FBEC;
+    opacity: 0;
     &__link {
       width: 100%;
       font-size: 32px;
       line-height: 110%;
       letter-spacing: -0.24px;
       color: #758748;
-      padding: 16px 24px;
+      padding: 16px 0;
       &::after {
         display: none;
       }
+    }
+    &__btn {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
     }
   }
 }

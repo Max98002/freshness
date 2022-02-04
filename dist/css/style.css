@@ -449,6 +449,26 @@ button {
 .btn__green:hover {
   background-color: #31D491;
 }
+.btn__location {
+  color: #283505;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 32px;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  background: #F7FBEC;
+  border: 1px solid #B9CC88;
+  border-radius: 39px;
+  background-image: url("../img/icons/icons.svg#location-purlpe");
+  background-repeat: no-repeat;
+  background-size: 27%;
+  background-position: left center;
+}
+.btn__location_mobile {
+  display: none;
+}
 .btn-menu {
   position: relative;
   display: none;
@@ -490,6 +510,11 @@ button {
   height: 22px;
 }
 
+@media (max-width: 960px) {
+  .btn__location_mobile {
+    display: inherit;
+  }
+}
 *,
 *::after,
 *::before {
@@ -622,11 +647,15 @@ a {
     position: absolute;
     top: 96px;
     left: -100%;
-    opacity: 0;
-    width: 100%;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    justify-content: flex-start;
+    height: calc(100vh - 97px);
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
     background: #F7FBEC;
+    opacity: 0;
   }
   .nav__link {
     width: 100%;
@@ -634,10 +663,15 @@ a {
     line-height: 110%;
     letter-spacing: -0.24px;
     color: #758748;
-    padding: 16px 24px;
+    padding: 16px 0;
   }
   .nav__link::after {
     display: none;
+  }
+  .nav__btn {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
   }
 }
 .showMenu {
