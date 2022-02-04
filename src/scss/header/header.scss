@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+  width: 100%;
+  padding: 0 32px;
+  margin-bottom: 48px;
+  &__logo {
+    width: 121px;
+    min-width: 120px;
+    height: 32px;
+    &_mobile {
+      display: none;
+      width: 50px;
+      height: 45px;
+    }
+  }
+  &__address, &__phone {
+    span, a {
+      margin-right: 10px;
+      font-style: normal;
+      color: #33BB83;
+    }
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    &__element {
+      display: flex;
+      align-items: center;
+    }
+    &__star {
+      margin: 0 16px;
+    }
+  }
+  &__address {
+    &_mobile {
+      display: none;
+    }
+  }
+}

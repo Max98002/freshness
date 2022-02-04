@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 388px;
+  &__link {
+    position: relative;
+    color: #758748;
+    line-height: 110%;
+    letter-spacing: -0.24px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -35px;
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/icons/icons.svg#star");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
