@@ -688,9 +688,8 @@ a {
     display: none;
   }
   .nav__btn {
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
+    align-self: flex-start;
+    margin-top: auto;
   }
 }
 .showMenu {
