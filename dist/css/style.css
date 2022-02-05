@@ -577,7 +577,7 @@ a {
 .header__logo {
   width: 121px;
   min-width: 120px;
-  height: 32px;
+  height: 34px;
 }
 .header__logo_mobile {
   display: none;

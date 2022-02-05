@@ -7,7 +7,11 @@ export default function menu (btnSelector) {
     if (!isOpen) {
       isOpen = true;
       this.classList.add('btn-menu_active');
-      document.querySelector('.header__logo').style.display = 'inherit';
+      document.querySelector('.header__logo').style.cssText = `
+        display: inherit;
+        width: 159px;
+        height: 44px;
+      `;
       document.querySelector('.header__logo_mobile').style.display = 'none';
       document.querySelector('.header__address_mobile').style.display = 'none';
       document.querySelector('.nav').classList.add('showMenu');
@@ -17,7 +21,11 @@ export default function menu (btnSelector) {
     } else {
       isOpen = false;
       this.classList.remove('btn-menu_active');
-      document.querySelector('.header__logo').style.display = 'none';
+      document.querySelector('.header__logo').style.cssText = `
+      display: none;
+      width: 121px;
+      height: 34px;
+    `;
       document.querySelector('.header__logo_mobile').style.display = 'inherit';
       document.querySelector('.header__address_mobile').style.display = 'inherit';
       document.querySelector('.nav').classList.remove('showMenu');
@@ -35,6 +43,14 @@ export default function menu (btnSelector) {
       document.querySelector('.header__logo_mobile').style.display = 'none';
     } else {
       document.querySelector('.header__logo_mobile').style.display = 'inherit';
+    }
+
+    if (window.screen.width > 960 && !menuBtn.classList.contains('btn-menu_active')) {
+      document.querySelector('.header__logo').style.display = 'inherit';
+      document.querySelector('.header__address_mobile').style.display = 'none';
+    } else {
+      document.querySelector('.header__address_mobile').style.display = 'inherit';
+      document.querySelector('.header__logo').style.display = 'none';
     }
   });
 
