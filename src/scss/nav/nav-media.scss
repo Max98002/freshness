@@ -1,12 +1,12 @@
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   .nav {
     position: absolute;
     top: 96px;
     left: -100%;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    height: calc(100vh - 180px);
     width: 100%;
+    height: calc(100% - 96px);
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 24px;

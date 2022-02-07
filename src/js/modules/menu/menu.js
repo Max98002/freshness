@@ -1,17 +1,22 @@
-export default function menu (btnSelector) {
+export default function menu(btnSelector) {
   const menuBtn = document.querySelector(btnSelector);
-  
+
   let isOpen = false;
 
-  menuBtn.addEventListener('click', function() {
+  menuBtn.addEventListener('click', function () {
     if (!isOpen) {
       isOpen = true;
       this.classList.add('btn-menu_active');
+      document.querySelector('.header').style.cssText = `
+        height: 100vh;
+        align-items: flex-start;
+      `;
       document.querySelector('.header__logo').style.cssText = `
         display: inherit;
         width: 159px;
         height: 44px;
       `;
+      document.querySelector('.btn__location_mobile').style.display = 'block';
       document.querySelector('.header__logo_mobile').style.display = 'none';
       document.querySelector('.header__address_mobile').style.display = 'none';
       document.querySelector('.nav').classList.add('showMenu');
@@ -21,11 +26,16 @@ export default function menu (btnSelector) {
     } else {
       isOpen = false;
       this.classList.remove('btn-menu_active');
+      document.querySelector('.header').style.cssText = `
+      height: auto;
+      align-items: center;
+    `;
       document.querySelector('.header__logo').style.cssText = `
       display: none;
       width: 121px;
       height: 34px;
     `;
+      document.querySelector('.btn__location_mobile').style.display = 'none';
       document.querySelector('.header__logo_mobile').style.display = 'inherit';
       document.querySelector('.header__address_mobile').style.display = 'inherit';
       document.querySelector('.nav').classList.remove('showMenu');

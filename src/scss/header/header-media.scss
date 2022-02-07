@@ -1,8 +1,25 @@
-@media (max-width: 960px) {
+@media (max-width: 1398px) {
+  .header {
+    padding: 0 calc(50vw - 580px);
+    &__logo {
+      margin-right: 200px;
+    }
+  }
+}
+@media (max-width: 1185px) {
+  .header {
+    padding: 0 calc(50vw - 480px);
+    &__logo {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 980px) {
   .header {
     position: relative;
     justify-content: center;
-    padding: 14px 32px;
+    padding: 14px 24px;
     height: 72px;
     &__logo {
       display: none;

@@ -42,6 +42,9 @@ button {
     background-position: left center;
 
     &_mobile {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
       display: none;
     }
   }
@@ -114,14 +117,4 @@ button {
 .svg-location-dims {
   width: 22px;
   height: 22px;
-}
-
-@media (max-width: 960px) {
-  .btn {
-    &__location {
-      &_mobile {
-        display: inherit;
-      }
-    }
-  }
 }
