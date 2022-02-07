@@ -22,7 +22,10 @@ export default function menu(btnSelector) {
       document.querySelector('.header__address_mobile').style.display = 'none';
       document.querySelector('.nav').classList.add('showMenu');
       document.querySelector('.nav').classList.remove('hideMenu');
-      document.body.style.background = '#F7FBEC';
+
+      document.body.style.cssText = `background: #F7FBEC; overflow-y: hidden;`;
+      document.querySelector('.nav').style.cssText = `background: #F7FBEC; overflow-y: hidden;`;
+
       document.querySelector('.header').style.background = '#F7FBEC';
     } else {
       isOpen = false;
@@ -42,7 +45,10 @@ export default function menu(btnSelector) {
       document.querySelector('.header__address_mobile').style.display = 'inherit';
       document.querySelector('.nav').classList.remove('showMenu');
       document.querySelector('.nav').classList.add('hideMenu');
-      document.body.style.background = '#FDFFF8';
+
+      document.body.style.cssText = `background: #FDFFF8; overflow-y: auto;`;
+      document.querySelector('.nav').style.cssText = `background: #F7FBEC; overflow-y: auto;`;
+
       document.querySelector('.header').style.background = '#FDFFF8';
     }
   });
