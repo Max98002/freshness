@@ -10,6 +10,7 @@ export default function menu(btnSelector) {
       document.querySelector('.header').style.cssText = `
         height: 100vh;
         align-items: flex-start;
+        margin: 0;
       `;
       document.querySelector('.header__logo').style.cssText = `
         display: inherit;
@@ -29,6 +30,7 @@ export default function menu(btnSelector) {
       document.querySelector('.header').style.cssText = `
       height: auto;
       align-items: center;
+      margin-bottom: 48px;
     `;
       document.querySelector('.header__logo').style.cssText = `
       display: none;
