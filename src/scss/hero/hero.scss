@@ -1,0 +1,105 @@
+.main-hero {
+  margin-top: 48px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Tenor Sans Regular', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 97px;
+    letter-spacing: -1.96px;
+    color: #084F32;
+  }
+
+  &__sub {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+}
+
+.hero {
+  &__order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    column-gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  &-input {
+    &__wrap {
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 24px;
+      padding-left: 60px;
+      background: #FDFFF8;
+      border: 1px solid #D6E3B5;
+      border-radius: 40px;
+      transition: all .2s;
+      z-index: -1;
+      &:hover {
+        border: 1px solid #B9CC88;
+        .hero-input__right {
+          &::placeholder {
+            transition: all .2s;
+            color: #92A660;
+          }
+        }
+      }
+    }
+    &_error {
+      border-color: #E75C42;
+    }
+    &__right {
+      border: none;
+      max-width: 137px;
+      &::placeholder {
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.4px;
+        color: #C3D696;
+      }
+      outline: none;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.4px;
+      color: #283505;
+    }
+    &__left {
+      position: absolute;
+      top: 50%;
+      left: 1px;
+      transform: translateY(-50%);
+      display: grid;
+      place-items: center;
+      width: 47px;
+      height: 47px;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.4px;
+      color: #084F32;
+      background: #EDF6D9;
+      border-radius: 100%
+    }
+  }
+
+  &-policy {
+    margin: 0;
+    text-align: center;
+    color: #758748;
+    line-height: 110%;
+
+    &__link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      text-decoration-line: underline;
+      color: #48591D;
+      line-height: 110%;
+    }
+  }
+}

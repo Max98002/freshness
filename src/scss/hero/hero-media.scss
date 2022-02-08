@@ -1,0 +1,39 @@
+@media (max-width: 996px) {
+  .main-hero {
+    &__title {
+      font-size: 64px;
+      line-height: 110%;
+      letter-spacing: -1.96px;
+      margin-bottom: 16px;
+    }
+    &__sub {
+      margin-bottom: 32px;
+    }
+  }
+  .hero {
+    &__order {
+      width: 255px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-flow: column nowrap;
+      column-gap: 0;
+      button {
+        width: 100%;
+      }
+    }
+    &-input {
+      &__wrap {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .main-hero {
+    &__title {
+      font-size: 45px;
+    }
+  }
+}

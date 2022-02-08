@@ -9,7 +9,7 @@ button {
 .btn {
   padding: 16px 32px;
   font-family: Manrope;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.4px;
   color: #FDFFF8;
@@ -120,4 +120,22 @@ button {
 .svg-location-dims {
   width: 22px;
   height: 22px;
+}
+.svg-orange-star-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.error-message {
+  position: absolute;
+  display: none;
+  left: 10px;
+  top: -20px;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  color: #E75C42;
+  &_show {
+    display: block;
+  }
 }

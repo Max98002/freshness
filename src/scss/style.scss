@@ -47,6 +47,14 @@ a {
 @import './nav/nav';
 @import './nav/nav-media';
 
+//style hero and media
+@import './hero/hero';
+@import './hero/hero-media';
+
+//style reviews and media
+@import './reviews/reviews';
+@import './reviews/reviews-media';
+
 .show {
   display: inherit;
 }

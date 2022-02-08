@@ -1,0 +1,22 @@
+.reviews {
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+  &-info {
+    &__number {
+      font-size: 18px;
+      line-height: 110%;
+    }
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 110%;
+    }
+  }
+}
+
+.svg-orange-star-dims {
+  width: 20px;
+  height: 20px;
+}
