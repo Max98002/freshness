@@ -3,72 +3,64 @@ export default function menu(btnSelector) {
 
   let isOpen = false;
 
+  const logoMobile = document.querySelector('.header__logo_mobile');
+  const addressMobile = document.querySelector('.header__address_mobile');
+  const headerLogo = document.querySelector('.header__logo');
+  const header = document.querySelector('.header');
+  const nav = document.querySelector('.nav');
+  const btnLocationMobile = document.querySelector('.btn__location_mobile');
+
   menuBtn.addEventListener('click', function () {
     if (!isOpen) {
       isOpen = true;
       this.classList.add('btn-menu_active');
-      document.querySelector('.header').style.cssText = `
-        height: 100vh;
-        align-items: flex-start;
-        margin: 0;
+      document.body.style.cssText = `
+        position: fixed;
+        background: #F7FBEC;
       `;
-      document.querySelector('.header__logo').style.cssText = `
-        display: inherit;
-        width: 159px;
-        height: 44px;
-      `;
-      document.querySelector('.btn__location_mobile').style.display = 'block';
-      document.querySelector('.header__logo_mobile').style.display = 'none';
-      document.querySelector('.header__address_mobile').style.display = 'none';
-      document.querySelector('.nav').classList.add('showMenu');
-      document.querySelector('.nav').classList.remove('hideMenu');
 
-      document.body.style.cssText = `background: #F7FBEC; overflow-y: hidden;`;
-      document.querySelector('.nav').style.cssText = `background: #F7FBEC; overflow-y: hidden;`;
+      // Коли меню відкрито додавати клас showMenu до навігації та видалити клас що його ховає hideMenu
+      nav.classList.add('showMenu');
+      nav.classList.remove('hideMenu');
 
-      document.querySelector('.header').style.background = '#F7FBEC';
+      // Коли меню відкрито додаємо клас для лого hide
+      logoMobile.classList.add('hide');
+      // Коли меню відкрито додаємо клас для адрес hide
+      addressMobile.classList.add('hide');
+      // Коли меню відкрито додаємо клас show для лого
+      headerLogo.classList.add('show', 'header__logo_menu');
+      // Коли меню відкрито header отримує клас налаштуваннь для відкритого меню
+      header.classList.add('header_menu');
+      // Коли меню відкрито показуємо кнопку локації
+      btnLocationMobile.classList.add('btn__location_mobile_active');
+
     } else {
       isOpen = false;
       this.classList.remove('btn-menu_active');
-      document.querySelector('.header').style.cssText = `
-      height: auto;
-      align-items: center;
-      margin-bottom: 48px;
-    `;
-      document.querySelector('.header__logo').style.cssText = `
-      display: none;
-      width: 121px;
-      height: 34px;
-    `;
-      document.querySelector('.btn__location_mobile').style.display = 'none';
-      document.querySelector('.header__logo_mobile').style.display = 'inherit';
-      document.querySelector('.header__address_mobile').style.display = 'inherit';
-      document.querySelector('.nav').classList.remove('showMenu');
-      document.querySelector('.nav').classList.add('hideMenu');
+      document.body.style.cssText = `
+        position: relative;
+        background: #FDFFF8;
+      `;
 
-      document.body.style.cssText = `background: #FDFFF8; overflow-y: auto;`;
-      document.querySelector('.nav').style.cssText = `background: #F7FBEC; overflow-y: auto;`;
+      // Коли меню закрито додавати клас hideMenu до навігації та видалити клас що його показує showMenu
+      nav.classList.remove('showMenu');
+      nav.classList.add('hideMenu');
+      setTimeout(() => {
+        if (nav.classList.contains('hideMenu')) {
+          nav.classList.remove('hideMenu');
+        }
+      });
 
-      document.querySelector('.header').style.background = '#FDFFF8';
-    }
-  });
-
-  window.addEventListener('resize', () => {
-    if (window.screen.width > 960) {
-      document.querySelector('.nav').classList.remove('hideMenu');
-    }
-    if (window.screen.width > 960 || menuBtn.classList.contains('btn-menu_active')) {
-      document.querySelector('.header__logo_mobile').style.display = 'none';
-    } else {
-      document.querySelector('.header__logo_mobile').style.display = 'inherit';
-    }
-
-    if (window.screen.width > 960 && !menuBtn.classList.contains('btn-menu_active')) {
-      document.querySelector('.header__logo').style.display = 'inherit';
-      document.querySelector('.header__address_mobile').style.display = 'none';
-    } else {
-      document.querySelector('.header__address_mobile').style.display = 'inherit';
-      document.querySelector('.header__logo').style.display = 'none';
+      // Коли меню закрито видаляємо клас для лого hide
+      logoMobile.classList.remove('hide');
+      // Коли меню закрито видаляємо клас для адрес hide
+      addressMobile.classList.remove('hide');
+      // Коли меню закрито видаляємо клас show для лого
+      headerLogo.classList.remove('show', 'header__logo_menu');
+      // Коли меню закрито header видаляє клас налаштуваннь для відкритого меню
+      header.classList.remove('header_menu');
+      // Коли меню закрито ховаємо кнопку локації
+      btnLocationMobile.classList.remove('btn__location_mobile_active');
     }
   });
 
