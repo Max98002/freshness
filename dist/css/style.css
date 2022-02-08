@@ -948,25 +948,29 @@ input {
   color: #758748;
 }
 
-.reviews__icon {
-  width: 40px;
-  height: 40px;
-}
-.reviews-info__number {
-  font-size: 18px;
-  line-height: 110%;
-}
-.reviews-info__text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 110%;
-}
+@media (max-width: 996px) {
+  .reviews__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .reviews-info__number {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .reviews-info__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .reviews-info__text span {
+    display: none;
+  }
 
-.svg-orange-star-dims {
-  width: 20px;
-  height: 20px;
+  .svg-orange-star-dims {
+    width: 20px;
+    height: 20px;
+  }
 }
-
 .show {
   display: inherit;
 }
