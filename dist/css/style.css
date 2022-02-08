@@ -592,6 +592,10 @@ a {
   cursor: pointer;
 }
 
+input {
+  padding: 0;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -903,6 +907,9 @@ a {
     width: 100%;
   }
   .hero-input__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     margin-bottom: 16px;
   }

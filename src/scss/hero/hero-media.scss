@@ -23,6 +23,9 @@
     }
     &-input {
       &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         width: 100%;
         margin-bottom: 16px;
       }

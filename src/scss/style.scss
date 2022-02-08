@@ -39,6 +39,10 @@ a {
   cursor: pointer;
 }
 
+input {
+  padding: 0;
+}
+
 //style header and media
 @import './header/header';
 @import './header/header-media';
