@@ -971,6 +971,143 @@ input {
     height: 20px;
   }
 }
+.main-block {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 759px;
+  margin-top: 56px;
+}
+.main-block::before {
+  content: "";
+  position: absolute;
+  top: -152px;
+  left: 0;
+  right: 0;
+  height: 735px;
+  background: #F7FBEC;
+  z-index: -1;
+}
+.main-block__title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: "Tenor Sans Regular", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 97px;
+  letter-spacing: -1.96px;
+  color: #084F32;
+}
+.main-block__left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  height: 100%;
+  padding-top: 41px;
+  padding-bottom: 44px;
+}
+.main-block__right {
+  position: relative;
+  max-width: 612px;
+  width: 100%;
+}
+.main-block__price {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 87px;
+  background-image: url("../img/icons/icons.svg#price-furniture");
+  background-repeat: no-repeat;
+  background-position: 35px -5px;
+}
+.main-block__price span {
+  font-family: "Tenor Sans Regular", sans-serif;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: -1.96px;
+  color: #FDFFF8;
+}
+.main-block__price span sup {
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: -0.24px;
+  color: #FDFFF8;
+}
+.main-block__sub {
+  flex-grow: 1;
+}
+
+@media (max-width: 1251.98px) {
+  .main-block {
+    height: 559px;
+  }
+  .main-block::before {
+    height: 600px;
+  }
+  .main-block__left {
+    padding-bottom: 0;
+  }
+  .main-block__right {
+    width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .main-block {
+    height: 497px;
+  }
+  .main-block::before {
+    display: none;
+  }
+  .main-block__title {
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -1.96px;
+  }
+  .main-block__right {
+    width: 400px;
+  }
+  .main-block__price {
+    width: 130px;
+    height: 85px;
+    background-size: 100px;
+    background-position: 35px 0;
+  }
+}
+@media (max-width: 763px) {
+  .main-block {
+    flex-flow: column nowrap;
+    height: auto;
+    margin-top: 40px;
+  }
+  .main-block__left, .main-block__right {
+    width: 100%;
+  }
+  .main-block__left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+  }
+  .main-block__title {
+    font-size: 45px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -1.96px;
+    margin-bottom: 16px;
+  }
+  .main-block__reviews {
+    margin-bottom: 24px;
+  }
+}
 .show {
   display: inherit;
 }
