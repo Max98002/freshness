@@ -59,7 +59,12 @@ input {
 @import './reviews/reviews';
 @import './reviews/reviews-media';
 
+//Стилі для головних екранів інших сторінок
 @import './firniture/furniture';
+
+// Стилі для блоку з вибором послуг
+@import './section-services/services';
+@import './section-services/services-media';
 
 
 .show {
