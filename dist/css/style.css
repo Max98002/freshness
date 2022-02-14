@@ -1292,10 +1292,23 @@ input {
   }
 }
 @media (max-width: 860px) {
+  .services-block__price_hide {
+    opacity: 0;
+  }
+
+  .services-block__price_show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
   .services__wrap {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 450px;
     column-gap: 20px;
+  }
+  .services-block:hover .star {
+    opacity: 0;
   }
   .services-block__title {
     margin-top: 43px;

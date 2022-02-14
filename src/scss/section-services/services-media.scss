@@ -28,6 +28,14 @@
 }
 
 @media (max-width: 860px) {
+  .services-block__price_hide {
+    opacity: 0;
+  }
+  .services-block__price_show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
   .services {
     &__wrap {
       grid-template-columns: repeat(3, 1fr);
@@ -36,6 +44,12 @@
     }
 
     &-block {
+      &:hover {
+        .star {
+          opacity: 0;
+        }
+      }
+
       &__title {
         margin-top: 43px;
       }
@@ -61,6 +75,7 @@
           height: 60px;
         }
       }
+
       &__btn {
         opacity: 1;
         visibility: visible;
