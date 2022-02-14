@@ -14,11 +14,13 @@
 	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
+		"@glidejs/glide": "^3.5.2",
 		"gulp-cli": "^2.3.0",
 		"mobile-detect": "^1.4.5"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
+		"css-loader": "^6.6.0",
 		"del": "latest",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
@@ -44,6 +46,7 @@
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
 		"sass": "latest",
+		"style-loader": "^3.3.1",
 		"swiper": "latest",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",

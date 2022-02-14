@@ -69,6 +69,10 @@ input {
 //Стилі для наших клієнтів
 @import './customers/customers';
 
+//Стилі для відгуків клієнта Slider
+@import './customerFB/customerFB';
+@import './customerFB/customerFB-media';
+
 
 .show {
   display: inherit;
