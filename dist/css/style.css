@@ -1126,6 +1126,9 @@ input {
 .services-block__title {
   margin: 0;
   margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   font-family: "Tenor Sans Regular";
   font-style: normal;
   font-weight: normal;
@@ -1221,6 +1224,7 @@ input {
   height: 104%;
   border: 1px solid #C1D198;
   border-radius: 400px;
+  z-index: -1;
 }
 .services__block:nth-child(1) {
   max-height: 558px;
