@@ -66,6 +66,9 @@ input {
 @import './section-services/services';
 @import './section-services/services-media';
 
+//Стилі для наших клієнтів
+@import './customers/customers';
+
 
 .show {
   display: inherit;
