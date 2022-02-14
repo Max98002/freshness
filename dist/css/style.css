@@ -1154,6 +1154,8 @@ input {
 }
 .services-block__price_hide {
   opacity: 1;
+  visibility: visible;
+  display: block;
 }
 .services-block__price svg {
   position: absolute;
