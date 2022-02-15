@@ -1,4 +1,5 @@
 .сleaning {
+  position: relative;
   background: url('../img/сleaning/сleaning.png') no-repeat top / cover;
   display: flex;
   flex-flow: column nowrap;
@@ -50,6 +51,22 @@
     line-height: 30px;
     letter-spacing: -0.4px;
     color: #FDFFF8;
+  }
+
+  &__lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      height: 1px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 3px;
+    }
   }
 }
 
