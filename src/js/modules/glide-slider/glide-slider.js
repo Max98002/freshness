@@ -9,7 +9,7 @@ const glide = new Glide(".glide", {
   startAt: 0,
   keyboard: true,
   gap: 50,
-  // autoplay: 2000,
+  autoplay: 2000,
   hoverpause: true,
   animationDuration: 1000,
   peek: {
