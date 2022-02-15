@@ -1,6 +1,7 @@
 section,
 header,
-footer {
+footer,
+.сleaning__items {
   padding: 0 24px;
 }
 
@@ -31,7 +32,8 @@ footer {
 @media (min-width: 560.98px) {
   section,
   header,
-  footer {
+  footer,
+  .сleaning__items {
     padding: 0 40px;
   }
 }
@@ -39,7 +41,8 @@ footer {
 @media (min-width: 1251.98px) {
   section,
   header,
-  footer {
+  footer,
+  .сleaning__items {
     padding: 0 calc(50vw - 622px);
   }
 }
