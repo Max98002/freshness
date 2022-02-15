@@ -104,3 +104,23 @@
     }
   }
 }
+
+@media (max-width: 327px) {
+  .services {
+    &__wrap {
+      grid-template-columns: 245px;
+      grid-template-rows: 380px;
+      grid-auto-rows: 380px;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .services {
+    &__wrap {
+      grid-template-columns: 200px;
+      grid-template-rows: 280px;
+      grid-auto-rows: 330px;
+    }
+  }
+}

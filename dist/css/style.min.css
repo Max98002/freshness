@@ -1173,9 +1173,6 @@ input {
 .services-block__title {
   margin: 0;
   margin-top: 64px;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
   font-family: "Tenor Sans Regular";
   font-style: normal;
   font-weight: normal;
@@ -1397,6 +1394,20 @@ input {
     order: -1;
   }
 }
+@media (max-width: 327px) {
+  .services__wrap {
+    grid-template-columns: 245px;
+    grid-template-rows: 380px;
+    grid-auto-rows: 380px;
+  }
+}
+@media (max-width: 300px) {
+  .services__wrap {
+    grid-template-columns: 200px;
+    grid-template-rows: 280px;
+    grid-auto-rows: 330px;
+  }
+}
 .customers {
   margin-bottom: 128px;
 }
@@ -1498,7 +1509,7 @@ input {
   }
 }
 .customerFB {
-  margin-bottom: 100px;
+  margin-bottom: 152px;
 }
 .customerFB__subtitle {
   margin-bottom: 64px;
@@ -1604,6 +1615,61 @@ input {
   border-radius: 48px;
 }
 
+.glide__arrows {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  row-gap: 24px;
+}
+.glide__arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: #33BB83;
+  border: 3px solid #FDFFF8;
+  border-radius: 100%;
+}
+.glide__arrow img {
+  width: 20px;
+  height: 20px;
+}
+.glide__arrow--left img {
+  transform: rotate(180deg);
+}
+.glide__bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  column-gap: 12px;
+  padding-right: 96px;
+}
+.glide__bullet {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background: #C0D58D;
+  border-radius: 100%;
+}
+.glide__bullet--active {
+  background-color: #748745;
+}
+.glide__bullet--active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border: 1px solid #748745;
+  border-radius: 100%;
+}
+
 @media (max-width: 1040px) {
   .customerFB__subtitle {
     margin: 0 auto;
@@ -1646,6 +1712,25 @@ input {
   .customerFB-after {
     margin-top: -5px;
   }
+
+  .glide__arrows {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    top: 40%;
+    right: 0;
+  }
+  .glide__arrow--left {
+    margin-right: -17px;
+    transform: rotate(180deg);
+  }
+  .glide__arrow--right {
+    margin-left: -17px;
+    transform: rotate(180deg);
+  }
+  .glide__bullets {
+    display: none;
+  }
 }
 @media (max-width: 850px) {
   .customerFB-slider__slid {
@@ -1657,6 +1742,10 @@ input {
   }
   .customerFB-response__main-text {
     margin-bottom: 32px;
+  }
+
+  .glide__arrows {
+    top: 32%;
   }
 }
 @media (max-width: 520px) {

@@ -1,5 +1,5 @@
 .customerFB {
-  margin-bottom: 100px;
+  margin-bottom: 152px;
 
   &__subtitle {
     span {
@@ -119,5 +119,68 @@
     width: 1050px;
     margin-left: -580px;
     border-radius: 48px;
+  }
+}
+
+.glide {
+  &__arrows {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 50%;
+    // right: -24px;
+    right: 6%;
+    transform: translateY(-50%);
+    row-gap: 24px;
+  }
+
+  &__arrow {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    background: #33BB83;
+    border: 3px solid #FDFFF8;
+    border-radius: 100%;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    &--left {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    column-gap: 12px;
+    padding-right: 96px;
+  }
+
+  &__bullet {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #C0D58D;
+    border-radius: 100%;
+    &--active {
+      background-color: #748745;;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        border: 1px solid #748745;
+        border-radius: 100%;
+      }
+    }
   }
 }
