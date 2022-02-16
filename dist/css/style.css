@@ -2070,6 +2070,12 @@ input {
     margin-bottom: 32px;
   }
 }
+@media (max-width: 420px) {
+  .means-main-block__wrap {
+    width: 100%;
+    height: 340px;
+  }
+}
 .show {
   display: inherit;
 }
