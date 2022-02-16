@@ -17,7 +17,7 @@
       height: 100%;
       border-radius: 400px;
       margin: 0 auto;
-      background: url('../img/means/means-img.png') no-repeat 50% 50% / cover;
+      background: url("../img/means/means-img.png") no-repeat 50% 50% / cover;
       overflow: hidden;
     }
 
@@ -82,72 +82,6 @@
     position: relative;
     padding-bottom: 262px;
     margin-bottom: 143px;
-  }
-
-  &-info {
-    &__circle {
-      min-width: 56px;
-      min-height: 56px;
-      display: block;
-      background: #F7AA02;
-      border-radius: 200px;
-    }
-
-    &__block {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      z-index: -1;
-
-      img {
-        width: 64px;
-        height: 64px;
-      }
-
-      &_left {
-        top: 50%;
-        left: -69.5%;
-        transform: translateY(-50%);
-
-        span {
-          margin-right: 16px;
-        }
-      }
-
-      &_bottom {
-        flex-flow: column-reverse nowrap;
-        justify-content: center;
-        align-items: center;
-        left: 50%;
-        bottom: -23%;
-        transform: translateX(-50%);
-        max-width: 208px;
-        width: 100%;
-
-        span {
-          margin-top: 16px;
-        }
-      }
-
-      &_right {
-        flex-flow: row-reverse nowrap;
-        top: 50%;
-        right: -64.7%;
-        transform: translateY(-50%);
-
-        span {
-          margin-left: 16px;
-        }
-      }
-    }
-
-    &__text {
-      font-weight: 500;
-      font-size: 23px;
-      line-height: 130%;
-      letter-spacing: -0.56px;
-      color: #283505;
-    }
   }
 
   &__bottom {
