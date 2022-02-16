@@ -1,0 +1,151 @@
+@media(max-width: 1040px) {
+  .means {
+    margin-top: 269px;
+
+    &__title {
+      margin-bottom: 81px;
+    }
+
+    &__wrap {
+      padding-bottom: 249px;
+      margin-bottom: 0;
+    }
+
+    &__bottom {
+      display: none;
+    }
+
+    &-main-block {
+      &__wrap {
+        width: 304px;
+        height: 316px;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 400px 400px 12px 12px;
+        border: 3px solid #EDF2DD;
+      }
+
+      &__green-line {
+        display: none;
+      }
+
+      &__red-line {
+        display: none;
+      }
+
+      &__red-circle {
+        display: none;
+      }
+    }
+
+    &-info {
+      &__block {
+        flex-flow: column-reverse nowrap;
+
+        &_left {
+          left: -86.5%;
+        }
+
+        &_right {
+          right: -85.5%;
+        }
+
+        &_bottom {
+          min-height: 117px;
+          top: 127%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 820px) {
+  .means {
+    &-info {
+      &__block {
+        flex-flow: column-reverse nowrap;
+
+        &_left {
+          left: -64.5%;
+        }
+
+        &_right {
+          right: -57.5%;
+        }
+
+        &_bottom {
+          top: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 720px) {
+  .means {
+    &__wrap {
+      padding-bottom: 311px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &-info {
+      &__block {
+        flex-flow: column-reverse nowrap;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        &_left {
+          bottom: -122%;
+          left: 0;
+          span {
+            margin: 0;
+            margin-top: 8px;
+          }
+        }
+
+        &_right {
+          bottom: -122%;
+          left: 0;
+          span {
+            margin: 0;
+            margin-top: 8px;
+          }
+        }
+
+        &_bottom {
+          top: 143%;
+          min-height: 73px;
+          span {
+            margin: 0;
+            &:nth-child(2) {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+
+      &__circle {
+        min-width: 36px;
+        min-height: 36px;
+      }
+
+      &__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: -0.4px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

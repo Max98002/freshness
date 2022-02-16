@@ -77,6 +77,9 @@ input {
 @import './сleaning/сleaning';
 @import './сleaning/сleaning-media';
 
+//Стилі для секції Засоби якими користуємось
+@import './means/means';
+@import './means/means-media';
 
 .show {
   display: inherit;
