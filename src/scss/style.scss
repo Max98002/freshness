@@ -81,6 +81,9 @@ input {
 @import './means/means';
 @import './means/means-media';
 
+//Стилі для методів оплати
+@import './pay/pay';
+
 .show {
   display: inherit;
 }

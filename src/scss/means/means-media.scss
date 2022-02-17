@@ -104,11 +104,11 @@
 }
 
 
-@media(max-width: 720px) {
+@media(max-width: 768px) {
   .means {
     &__wrap {
       min-height: 569px;
-      margin-bottom: 104px;
+      margin-bottom: 20px;
     }
     &__title {
       margin-bottom: 32px;
