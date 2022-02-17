@@ -1,7 +1,7 @@
 section,
 header,
 footer,
-.сleaning__items {
+.сleaning__items, .policy {
   padding: 0 24px;
 }
 
@@ -33,7 +33,7 @@ footer,
   section,
   header,
   footer,
-  .сleaning__items {
+  .сleaning__items, .policy {
     padding: 0 40px;
   }
 }
@@ -42,7 +42,7 @@ footer,
   section,
   header,
   footer,
-  .сleaning__items {
+  .сleaning__items, .policy {
     padding: 0 calc(50vw - 622px);
   }
 }

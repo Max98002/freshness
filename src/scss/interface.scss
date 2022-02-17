@@ -38,8 +38,8 @@ button {
     border-radius: 39px;
     background-image: url('../img/icons/icons.svg#location-purlpe');
     background-repeat: no-repeat;
-    background-size: 27%;
-    background-position: left center;
+    background-size: 25px;
+    background-position: 15px 50%;
 
     &_mobile {
       position: fixed;
@@ -119,8 +119,8 @@ button {
 
 .svg-call-dims,
 .svg-location-dims {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
 }
 
 .svg-orange-star-dims {

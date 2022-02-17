@@ -84,6 +84,13 @@ input {
 //Стилі для методів оплати
 @import './pay/pay';
 
+//Стилі для футера
+@import './footer/footer';
+@import './footer/footer-media';
+
+//Стилі для політики конфеденційностi
+@import './policy/policy';
+
 .show {
   display: inherit;
 }
