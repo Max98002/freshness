@@ -3,25 +3,34 @@
     margin-bottom: 122px;
   }
 
+  &__wrap {
+    position: relative;
+    min-height: 815px;
+    margin-bottom: 183px;
+  }
+
   &-main-block {
 
     &__wrap {
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 50%;
       width: 387px;
       height: 590px;
-      margin: 0 auto;
+      transform: translateX(-50%);
     }
 
     &__img {
+      // блок в обгорці дизайн елементів
       width: 100%;
       height: 100%;
       border-radius: 400px;
-      margin: 0 auto;
       background: url("../img/means/means-img.png") no-repeat 50% 50% / cover;
       overflow: hidden;
     }
 
     &__green-line {
+      // Зелений бордер
       position: absolute;
       top: 50%;
       left: 50%;
@@ -34,6 +43,7 @@
       z-index: 2;
 
       img {
+        //Зірка в шапці блоку
         position: absolute;
         left: 50%;
         top: -13px;
@@ -78,12 +88,6 @@
     }
   }
 
-  &__wrap {
-    position: relative;
-    padding-bottom: 262px;
-    margin-bottom: 143px;
-  }
-
   &__bottom {
     position: absolute;
     bottom: 0;
@@ -96,7 +100,7 @@
   }
 
   &-left-bottom {
-    left: 0;
+    left: 10px;
     transform: rotate(-9.23deg);
 
     &::before {
@@ -113,7 +117,7 @@
   }
 
   &-right-bottom {
-    right: 0;
+    right: 10px;
     transform: rotate(9.23deg);
 
     &::before {
@@ -127,5 +131,80 @@
       border-radius: 400px;
       transform: translate(-50%, -50%) rotate(-4.81deg);
     }
+  }
+
+  &-info {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      height: 711px;
+      width: 926px;
+      z-index: 1;
+      margin: 0 auto;
+      padding-top: 268px;
+    }
+
+    &__block {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      &:nth-child(1) {
+        margin-left: 52px;
+        span {
+          &:nth-child(1) {
+            margin-right: 16px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: auto;
+        flex-direction: column-reverse;
+
+        span {
+          &:nth-child(1) {
+            margin-top: 16px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin-right: 64px;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-end;
+        span {
+          &:nth-child(1) {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      &__text {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: -0.56px;
+        color: #283505;
+      }
+    }
+
+    &__icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    &__circle {
+      min-width: 56px;
+      min-height: 56px;
+      width: 56px;
+      height: 56px;
+      background: #F7AA02;
+      border-radius: 200px;
+    }
+
   }
 }
