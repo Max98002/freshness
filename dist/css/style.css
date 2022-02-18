@@ -653,7 +653,7 @@ input {
 .header__logo_mobile {
   display: none;
   width: 50px;
-  height: 45px;
+  height: 50px;
 }
 .header__logo_menu {
   width: 159px;
@@ -846,11 +846,11 @@ input {
   letter-spacing: -1.96px;
   color: #084F32;
 }
-.main-hero__sub {
+
+.hero__sub {
   text-align: center;
   margin-bottom: 64px;
 }
-
 .hero__order {
   display: flex;
   align-items: center;
@@ -1058,95 +1058,90 @@ input {
 }
 .main-block__price {
   position: absolute;
-  top: 85px;
-  left: 50%;
-  display: grid;
-  place-items: center;
+  top: 18%;
+  left: 47%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 108px;
   transform: translateX(-50%);
-  width: 150px;
-  height: 87px;
-  background-image: url("../img/icons/icons.svg#price-furniture");
-  background-repeat: no-repeat;
-  background-position: 35px -5px;
 }
-.main-block__price span {
-  font-family: "Tenor Sans Regular", sans-serif;
-  font-size: 23px;
-  line-height: 130%;
-  letter-spacing: -1.96px;
-  color: #FDFFF8;
+.main-block__price::after, .main-block__price::before {
+  content: "";
+  position: absolute;
 }
-.main-block__price span sup {
+.main-block__price::before {
+  top: -33%;
+  left: 19%;
+  width: 105px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: matrix(-0.98, 0.2, 0.2, 0.98, 0, 0);
+  border-radius: 100%;
+}
+.main-block__price::after {
+  top: -55%;
+  left: 21%;
+  width: 104px;
+  height: 57px;
+  border: 1px solid #E0EDC1;
+  transform: matrix(-0.95, 0.32, 0.32, 0.95, 0, 0);
+  border-radius: 100%;
+}
+.main-block__price span:first-child {
   font-family: "Manrope";
   font-size: 16px;
   line-height: 110%;
   letter-spacing: -0.24px;
   color: #FDFFF8;
 }
+.main-block__price span:last-child {
+  font-family: "Tenor Sans Regular", sans-serif;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: -1.96px;
+  color: #FDFFF8;
+}
 .main-block__sub {
   flex-grow: 1;
 }
 
-@media (max-width: 1251.98px) {
+@media (max-width: 1146px) {
   .main-block {
-    height: 559px;
-  }
-  .main-block::before {
-    height: 600px;
-  }
-  .main-block__left {
-    padding-bottom: 0;
-  }
-  .main-block__right {
-    width: 450px;
-  }
-}
-@media (max-width: 992px) {
-  .main-block {
-    height: 497px;
-  }
-  .main-block::before {
-    display: none;
-  }
-  .main-block__title {
-    font-size: 64px;
-    line-height: 110%;
-    letter-spacing: -1.96px;
-  }
-  .main-block__right {
-    width: 400px;
-  }
-  .main-block__price {
-    width: 130px;
-    height: 85px;
-    background-size: 100px;
-    background-position: 35px 0;
-  }
-}
-@media (max-width: 763px) {
-  .main-block {
-    flex-flow: column nowrap;
     height: auto;
-    margin-top: 40px;
-  }
-  .main-block__left, .main-block__right {
-    width: 100%;
-  }
-  .main-block__left {
-    display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 0;
+    margin: 0;
+    margin-bottom: 144px;
   }
-  .main-block__title {
-    font-size: 45px;
-    line-height: 110%;
+  .main-block::before {
+    height: 1000px;
+  }
+  .main-block__left {
+    margin-bottom: 77px;
     text-align: center;
-    letter-spacing: -1.96px;
-    margin-bottom: 16px;
   }
   .main-block__reviews {
-    margin-bottom: 24px;
+    width: 100%;
+  }
+  .main-block__title {
+    width: 100%;
+    font-size: 64px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -1.96px;
+    color: #084F32;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .main-block__sub {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 620px) {
+  .main-block__price {
+    top: 20%;
   }
 }
 .services {

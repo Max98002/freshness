@@ -12,14 +12,13 @@
     letter-spacing: -1.96px;
     color: #084F32;
   }
+}
 
+.hero {
   &__sub {
     text-align: center;
     margin-bottom: 64px;
   }
-}
-
-.hero {
   &__order {
     display: flex;
     align-items: center;
