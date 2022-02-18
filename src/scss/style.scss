@@ -91,6 +91,9 @@ input {
 //Стилі для політики конфеденційностi
 @import './policy/policy';
 
+//Стилі для блока чистка меблів
+@import './furniture-cleaning/furniture-cleaning';
+
 .show {
   display: inherit;
 }

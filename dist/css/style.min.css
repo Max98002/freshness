@@ -1019,6 +1019,7 @@ input {
   justify-content: space-between;
   height: 759px;
   margin-top: 56px;
+  margin-bottom: 144px;
 }
 .main-block::before {
   content: "";
@@ -1112,7 +1113,7 @@ input {
     flex-flow: column nowrap;
     align-items: center;
     margin: 0;
-    margin-bottom: 144px;
+    margin-bottom: 120px;
   }
   .main-block::before {
     height: 1000px;
@@ -1140,6 +1141,9 @@ input {
   }
 }
 @media (max-width: 620px) {
+  .main-block {
+    margin-bottom: 64px;
+  }
   .main-block__price {
     top: 20%;
   }
@@ -2763,6 +2767,115 @@ input {
   }
   .policy-left img {
     display: none;
+  }
+}
+.furniture-cleaning {
+  margin-bottom: 104px;
+}
+.furniture-cleaning__subtitle {
+  margin-bottom: 64px;
+}
+.furniture-cleaning__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 160px);
+  grid-auto-rows: auto;
+  gap: 16px 19px;
+}
+.furniture-cleaning__block {
+  flex-basis: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 32px;
+  background: #FDFFF8;
+  border: 1px solid #B9CC88;
+  border-radius: 16px;
+}
+.furniture-cleaning__block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1.5%;
+  width: 50%;
+  height: 100%;
+  background: #F7FBEC;
+  border-radius: 16px;
+  z-index: -1;
+}
+.furniture-cleaning__img {
+  width: 104px;
+  min-width: 64px;
+  height: 104px;
+  min-height: 64px;
+  margin-right: 28px;
+  mix-blend-mode: multiply;
+}
+.furniture-cleaning__name {
+  margin: 0;
+  flex-grow: 1;
+  padding-right: 13px;
+  font-family: "Tenor Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -0.32px;
+  color: #192201;
+}
+.furniture-cleaning__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.furniture-cleaning__price span {
+  line-height: 110%;
+  color: #758748;
+}
+.furniture-cleaning__price span:first-child {
+  font-size: 32px;
+}
+.furniture-cleaning__price span:last-child {
+  font-size: 14px;
+}
+
+@media (max-width: 1146px) {
+  .furniture-cleaning__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+  }
+  .furniture-cleaning__name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 760px) {
+  .furniture-cleaning {
+    margin-bottom: 64px;
+  }
+  .furniture-cleaning__subtitle {
+    margin-bottom: 24px;
+  }
+  .furniture-cleaning__wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 96px;
+    grid-auto-rows: 96px;
+    gap: 8px 0;
+  }
+  .furniture-cleaning__block {
+    padding: 16px;
+  }
+  .furniture-cleaning__img {
+    width: 64px;
+    height: 64px;
+  }
+  .furniture-cleaning__price span:first-child {
+    font-size: 23px;
+  }
+  .furniture-cleaning__price span:last-child {
+    font-size: 12px;
   }
 }
 .show {
