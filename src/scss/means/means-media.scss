@@ -106,6 +106,9 @@
 
 @media(max-width: 768px) {
   .means {
+    &__furniture {
+      margin-bottom: 114px;
+    }
     &__wrap {
       min-height: 569px;
       margin-bottom: 20px;
