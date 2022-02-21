@@ -1,155 +1,152 @@
-@media(max-width: 1040px) {
+@media (max-width: 1029px) {
   .means {
-    margin-top: 269px;
+    margin-top: 160px;
+    margin-bottom: 120px;
 
     &__title {
-      margin-bottom: 81px;
+      margin-bottom: 80px;
     }
 
-    &__bottom {
-      display: none !important;
-      visibility: hidden;
-      opacity: 0;
-    }
+    &-block {
+      width: 304px;
+      height: 316px;
+      padding: 0;
+      border-radius: 400px 400px 12px 12px;
+      border: 3px solid #EDF2DD;
+      overflow: hidden;
 
-    &-main-block {
-      &__wrap {
-        width: 304px;
-        height: 316px;
+      &::after {
+        display: none;
+      }
+
+      &__circle {
+        display: none;
       }
 
       &__img {
         width: 100%;
         height: 100%;
         border-radius: 400px 400px 12px 12px;
-        border: 3px solid #EDF2DD;
-      }
 
-      &__green-line {
-        display: none;
-      }
+        img {
+          border-radius: 400px 400px 12px 12px;
+        }
 
-      &__red-line {
-        display: none;
-      }
-
-      &__red-circle {
-        display: none;
+        &::after {
+          display: none;
+        }
       }
     }
 
-    &__wrap {
-      display: flex;
-      min-height: 445px;
+    &__bottom {
+      display: none;
     }
 
-    &-info {
+    &-wrap {
+      height: auto;
 
-      &__wrap {
-        padding-top: 0;
-        margin-top: auto;
-        width: 100%;
-        height: 303px;
-        justify-content: space-around;
+      &-elements {
+        height: auto;
       }
+    }
 
-      &__block {
+    &-elements {
+      max-width: 796px;
+      align-items: center;
+
+      &__element {
         &:nth-child(1) {
-          margin-left: 0;
-          flex-direction: column-reverse;
+          margin: 0;
+          flex-flow: column-reverse nowrap;
 
-          span {
-            &:nth-child(1) {
-              margin: 0;
-              margin-top: 8px;
-            }
+          h3 {
+            margin: 0;
           }
         }
 
         &:nth-child(2) {
-          span {
-            &:nth-child(1) {
-              margin: 0;
-              margin-top: 8px;
-            }
+          h3 {
+            margin: 0;
+            margin-top: 8px;
           }
         }
 
         &:nth-child(3) {
-          margin-right: 0;
-          flex-direction: column-reverse;
+          margin: 0;
+          flex-flow: column-reverse nowrap;
 
-          span {
-            &:nth-child(1) {
-              margin: 0;
-              margin-top: 8px;
-            }
+          h3 {
+            margin: 0;
           }
         }
       }
 
+      &__title {
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -0.4px;
+      }
+
       &__icon {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
+        margin-bottom: 8px;
       }
 
       &__circle {
-        min-width: 40px;
-        min-height: 40px;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
       }
     }
   }
 }
 
-
-@media(max-width: 768px) {
+@media (max-width: 640px) {
   .means {
-    &__furniture {
-      margin-bottom: 114px;
-    }
-    &__wrap {
-      min-height: 569px;
-      margin-bottom: 20px;
-    }
-    &__title {
+    padding-bottom: 0;
+    margin-bottom: 100px;
+
+    &-block {
+      position: inherit;
       margin-bottom: 32px;
     }
-    &-info {
-      &__wrap {
-        height: 214px;
-        justify-content: center;
-      }
-      &__block {
+
+    &-elements {
+      height: auto;
+      flex-flow: row wrap;
+
+      &__element {
+        &:nth-child(1) {
+          width: 50%;
+        }
+
+        &:nth-child(3) {
+          width: 50%;
+        }
+
         &:nth-child(2) {
-          margin-top: 82px;
+          margin: 0 auto;
+          margin-top: 48px;
+          order: 1;
         }
       }
     }
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .means {
-    &-main-block {
-      &__wrap {
-        width: 100%;
-        height: 340px;
-      }
+    &-block {
+      width: 327px;
+      height: 339px;
     }
-    &-info {
-      &__wrap {
-        flex-flow: row wrap;
-        justify-content: space-between;
-      }
-      &__block {
-        &:nth-child(2) {
-          order: 1;
-          margin: 0 auto;
-          margin-top: 0;
-        }
-      }
+  }
+}
+@media (max-width: 370px) {
+  .means {
+    &-block {
+      width: 100%;
+      height: 339px;
     }
   }
 }
