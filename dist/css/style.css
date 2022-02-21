@@ -610,7 +610,7 @@ button {
 
 body {
   font-family: "Manrope";
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   font-size: 16px;
   line-height: 130%;
@@ -3202,6 +3202,230 @@ input {
     width: 261px;
     height: 344px;
     margin-bottom: 33px;
+  }
+}
+.cost-cleaning {
+  padding-bottom: 64px;
+}
+.cost-cleaning__subtitle {
+  margin-bottom: 64px;
+}
+.cost-cleaning-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 48px;
+  background: #FDFFF8;
+  border: 1px solid #B9CC88;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.cost-cleaning-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -0.7%;
+  width: 50%;
+  height: 100%;
+  background: #F7FBEC;
+  border-radius: 16px;
+  z-index: -1;
+}
+.cost-cleaning-info__block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-basis: 50%;
+}
+.cost-cleaning-info__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.cost-cleaning-info__icon-violet {
+  width: 88px;
+  height: 88px;
+  margin-right: 40px;
+  border-radius: 100%;
+  background-color: #9C45BA;
+}
+.cost-cleaning-info__icon-violet img {
+  width: 44px;
+  height: 32px;
+}
+.cost-cleaning-info__icon-orange {
+  width: 80px;
+  height: 80px;
+  margin-right: 44px;
+  background: #F7AA02;
+  border-radius: 24px;
+}
+.cost-cleaning-info__icon-orange img {
+  width: 45px;
+  height: 34px;
+}
+.cost-cleaning-info__text {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cost-cleaning-info__name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  color: #92A660;
+}
+.cost-cleaning-info__price {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  color: #084F32;
+}
+.cost-cleaning-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 285px);
+  grid-auto-rows: auto;
+  gap: 16px;
+}
+.cost-cleaning-products__product {
+  padding: 8px;
+  display: flex;
+  background: #FDFFF8;
+  border: 1px solid #B9CC88;
+  border-radius: 16px;
+}
+.cost-cleaning-products__img {
+  width: 269px;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 32px;
+}
+.cost-cleaning-products__info {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 24px;
+}
+.cost-cleaning-products__name {
+  max-width: 200px;
+  margin: 0;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  font-family: "Tenor Sans Regular";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.32px;
+  color: #192201;
+}
+.cost-cleaning-products__size {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 110%;
+  color: #758748;
+  font-weight: 500;
+}
+.cost-cleaning-products__price {
+  font-size: 32px;
+  line-height: 110%;
+  color: #758748;
+  font-weight: 500;
+}
+.cost-cleaning-products__subprice {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  color: #758748;
+}
+.cost-cleaning-block__deco {
+  position: relative;
+}
+.cost-cleaning-block__deco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1.5%;
+  width: 50%;
+  height: 100%;
+  background: #F7FBEC;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+@media (max-width: 1060px) {
+  .cost-cleaning-info {
+    padding: 24px;
+  }
+  .cost-cleaning-info__icon {
+    width: 56px;
+    height: 56px;
+  }
+  .cost-cleaning-info__icon-violet, .cost-cleaning-info__icon-orange {
+    margin-right: 20px;
+  }
+  .cost-cleaning-info__icon-violet img, .cost-cleaning-info__icon-orange img {
+    width: 27px;
+    height: 20px;
+  }
+  .cost-cleaning-info__name {
+    font-size: 18px;
+  }
+  .cost-cleaning-info__price {
+    font-size: 23px;
+  }
+  .cost-cleaning-products__info {
+    padding-bottom: 8px;
+  }
+  .cost-cleaning-products__img {
+    width: 33%;
+    height: 100%;
+    margin-right: 16px;
+  }
+  .cost-cleaning-products__name {
+    padding-top: 8px;
+    margin-bottom: 8px;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+  }
+  .cost-cleaning-products__size {
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .cost-cleaning-products__price {
+    font-size: 23px;
+    line-height: 110%;
+  }
+  .cost-cleaning-products__subprice {
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 643px) {
+  .cost-cleaning-info {
+    height: 216px;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .cost-cleaning-info::before {
+    right: -1.5%;
+  }
+  .cost-cleaning-info__block {
+    width: 100%;
+  }
+  .cost-cleaning-products {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 195px);
+  }
+  .cost-cleaning-products__img {
+    width: 110px;
   }
 }
 .show {

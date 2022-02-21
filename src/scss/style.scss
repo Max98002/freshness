@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Manrope';
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   font-size: 16px;
   line-height: 130%;
@@ -96,6 +96,9 @@ input {
 
 //Стилі для блока як ми працюємо
 @import './how-we-work/how-we-work';
+
+//Cтилі для блока, вартість чистки
+@import './cost-cleaning/cost-cleaning.scss';
 
 .show {
   display: inherit;
