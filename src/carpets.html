@@ -13,7 +13,7 @@
         <h1 class="fz_90px main-block__title">Хімчистка <br> Килимів</h1>
 
         <div class="main-block__sub hero__sub main-hero__sub">
-          <div class="hero__order">
+          <form class="hero__order">
             <div class="hero-input__wrap ">
               <!-- hero-input_error -->
               <span class="hero-input__left">+38</span>
@@ -21,7 +21,7 @@
               <span class="error-message">Повідомлення про помилку</span> <!-- class error-message_show -->
             </div>
             <button class="btn btn__green">Замовити чистку</button>
-          </div>
+          </form>
           <p class="hero-policy fz_11px">
             Натискаючи «Зв’яжіться зі мною», я даю згоду на
             <a class="hero-policy__link" href="#">
@@ -120,7 +120,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Маленькі килимки</h3>
-            <p class="cost-cleaning-products__size">50-100см / 50-150см</p>
+            <p class="cost-cleaning-products__size">50-100см<span class="cost-cleaning-products__dagger"></span>50-150см</p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -131,7 +131,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Журнальні килими</h3>
-            <p class="cost-cleaning-products__size">100-150см / 100-200cм</p>
+            <p class="cost-cleaning-products__size">100-150см<span class="cost-cleaning-products__dagger"></span>100-200cм</p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -142,7 +142,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Середні килими</h3>
-            <p class="cost-cleaning-products__size">150-200см / 200-300см</p>
+            <p class="cost-cleaning-products__size">150-200см<span class="cost-cleaning-products__dagger"></span>200-300см</p>
             <span class="cost-cleaning-products__price">150-300</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -153,7 +153,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Великі килими</h3>
-            <p class="cost-cleaning-products__size">200см+ / 200-400см</p>
+            <p class="cost-cleaning-products__size">200см+<span class="cost-cleaning-products__dagger"></span>200-400см</p>
             <span class="cost-cleaning-products__price">200-800</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -695,6 +695,8 @@
 
   @@include('html/footer.html',{})
   @@include('html/policy.html', {})
+	@@include('html/modal.html', {})
+
 
   <button class="fixed-phone">
     <img src="./img/icons/icons.svg#fixed-phone" class="svg-fixed-phone-dims" alt="fixed-phone" />

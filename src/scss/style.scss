@@ -100,6 +100,9 @@ input {
 //Cтилі для блока, вартість чистки
 @import './cost-cleaning/cost-cleaning.scss';
 
+//Стилі для модалки
+@import './modal/modal';
+
 .show {
   display: inherit;
 }

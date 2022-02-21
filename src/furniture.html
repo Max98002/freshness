@@ -13,7 +13,7 @@
         <h1 class="fz_90px main-block__title">Хімчистка <br> Меблів</h1>
 
         <div class="main-block__sub hero__sub main-hero__sub">
-          <div class="hero__order">
+          <form class="hero__order">
             <div class="hero-input__wrap ">
               <!-- hero-input_error -->
               <span class="hero-input__left">+38</span>
@@ -21,7 +21,7 @@
               <span class="error-message">Повідомлення про помилку</span> <!-- class error-message_show -->
             </div>
             <button class="btn btn__green">Замовити чистку</button>
-          </div>
+          </form>
           <p class="hero-policy fz_11px">
             Натискаючи «Зв’яжіться зі мною», я даю згоду на
             <a class="hero-policy__link" href="#">
@@ -706,6 +706,8 @@
 
   @@include('html/footer.html',{})
   @@include('html/policy.html', {})
+	@@include('html/modal.html', {})
+
 
   <button class="fixed-phone">
     <img src="./img/icons/icons.svg#fixed-phone" class="svg-fixed-phone-dims" alt="fixed-phone" />

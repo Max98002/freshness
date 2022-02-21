@@ -62,7 +62,7 @@
         <h1 class="fz_90px main-block__title">Хімчистка <br> Килимів</h1>
 
         <div class="main-block__sub hero__sub main-hero__sub">
-          <div class="hero__order">
+          <form class="hero__order">
             <div class="hero-input__wrap ">
               <!-- hero-input_error -->
               <span class="hero-input__left">+38</span>
@@ -70,7 +70,7 @@
               <span class="error-message">Повідомлення про помилку</span> <!-- class error-message_show -->
             </div>
             <button class="btn btn__green">Замовити чистку</button>
-          </div>
+          </form>
           <p class="hero-policy fz_11px">
             Натискаючи «Зв’яжіться зі мною», я даю згоду на
             <a class="hero-policy__link" href="#">
@@ -169,7 +169,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Маленькі килимки</h3>
-            <p class="cost-cleaning-products__size">50-100см / 50-150см</p>
+            <p class="cost-cleaning-products__size">50-100см<span class="cost-cleaning-products__dagger"></span>50-150см</p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -180,7 +180,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Журнальні килими</h3>
-            <p class="cost-cleaning-products__size">100-150см / 100-200cм</p>
+            <p class="cost-cleaning-products__size">100-150см<span class="cost-cleaning-products__dagger"></span>100-200cм</p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -191,7 +191,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Середні килими</h3>
-            <p class="cost-cleaning-products__size">150-200см / 200-300см</p>
+            <p class="cost-cleaning-products__size">150-200см<span class="cost-cleaning-products__dagger"></span>200-300см</p>
             <span class="cost-cleaning-products__price">150-300</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -202,7 +202,7 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Великі килими</h3>
-            <p class="cost-cleaning-products__size">200см+ / 200-400см</p>
+            <p class="cost-cleaning-products__size">200см+<span class="cost-cleaning-products__dagger"></span>200-400см</p>
             <span class="cost-cleaning-products__price">200-800</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -839,6 +839,67 @@
     </div>
   </div>
 </aside>
+	<div class="modal">
+  <!-- modal_active -->
+  <div class="modal__wrap">
+    <div class="modal__window">
+      <!-- modal_active -->
+      <div class="modal-order">
+        <button class="modal-order__close">
+        </button>
+        <h2 class="section-title section__title modal__title">Залиште заявку</h2>
+        <p class="section-subtitle section__subtitle modal__subtitle">
+          Ми вам зателефонуємо
+        </p>
+        <form class="hero__order modal__form">
+          <div class="hero-input__wrap modal__input">
+            <!-- hero-input_error -->
+            <span class="hero-input__left">+38</span>
+            <input type="text" class="hero-input__right" placeholder="(000) 000-00-00">
+            <span class="error-message">Повідомлення про помилку</span> <!-- class error-message_show -->
+          </div>
+          <button class="btn btn__green modal__order-btn">Замовити чистку</button>
+        </form>
+        <span class="modal-order__line"></span>
+        <div class="modal__text">
+          <span>або телефонуйте</span>
+          <a href="tel:+380738080010" class="footer-top__phone-number footer-top__green-text">+ 380 (73) 80 800 10</a>
+          <a href="tel:+380738080010" class="footer-top__phone-number footer-top__green-text">+ 380 (73) 80 800 10</a>
+        </div>
+      </div>
+      <div class="modal-thanks" hidden>
+        <div class="modal-thanks__icon">
+          <svg class="modal-thanks__icon-big-star" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.5174 3.0268C16.7954 1.19615 14.2046 1.19615 13.4826 3.0268C11.5961 7.80994 7.80994 11.5961 3.0268 13.4826C1.19615 14.2046 1.19616 16.7954 3.0268 17.5174C7.80994 19.4039 11.5961 23.1901 13.4826 27.9732C14.2046 29.8039 16.7954 29.8038 17.5174 27.9732C19.4039 23.1901 23.1901 19.4039 27.9732 17.5174C29.8039 16.7954 29.8039 14.2046 27.9732 13.4826C23.1901 11.5961 19.4039 7.80994 17.5174 3.0268Z"
+              fill="#FDFFF8" stroke="#33BB83" stroke-width="3" />
+          </svg>
+          <svg class="modal-thanks__icon-check" viewBox="0 0 40 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.8816 31L0.467404 18.8355C0.168156 18.5423 0 18.1442 0 17.7295C0 17.3147 0.168156 16.9167 0.467404 16.6234L2.72426 14.4116C3.0235 14.1184 3.42928 13.9536 3.85287 13.9536C4.27609 13.9536 4.68186 14.1184 4.98111 14.4116L12.8817 22.153L35.0189 0.458067H35.0185C35.3181 0.164797 35.7239 0 36.1471 0C36.5704 0 36.9765 0.164797 37.2757 0.458067L39.5326 2.66984C39.8318 2.96311 40 3.36113 40 3.7759C40 4.19067 39.8318 4.5887 39.5326 4.88197L12.8816 31Z"
+              fill="#FDFFF8" />
+          </svg>
+          <svg class="modal-thanks__icon-small-star" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.44828 3.10352L9.13363 8.86644L14.8966 10.5518L9.13363 12.2371L7.44828 18.0001L5.76292 12.2371L0 10.5518L5.76292 8.86644L7.44828 3.10352Z"
+              fill="#FDFFF8" />
+            <path
+              d="M13.6554 0L14.3251 3.67508L18.0002 4.34483L14.3251 5.01458L13.6554 8.68966L12.9856 5.01458L9.31055 4.34483L12.9856 3.67508L13.6554 0Z"
+              fill="#FDFFF8" />
+          </svg>
+
+
+        </div>
+        <div class="modal-thanks__text">
+          <span>Ми зателефонуємо вам протягом</span>
+          <span>15хв</span>
+        </div>
+        <div class="modal-thanks__btn btn">Супер</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <button class="fixed-phone">
     <img src="./img/icons/icons.svg#fixed-phone" class="svg-fixed-phone-dims" alt="fixed-phone" />
