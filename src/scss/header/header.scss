@@ -10,45 +10,61 @@
   padding: 0 calc(50vw - 684px);
   z-index: 10;
   background: #FDFFF8;
-  box-shadow: 0px 26px 62px -10px rgba(80, 108, 0, 0.1);
+  transition: box-shadow .2s;
+
+  &_shadow {
+    box-shadow: 0px 26px 62px -10px rgba(80, 108, 0, 0.1);
+  }
+
   &__logo {
     width: 121px;
     min-width: 120px;
     height: 34px;
     margin-right: 373px;
+
     &_mobile {
       display: none;
       width: 51px;
       height: 50px;
     }
+
     &_menu {
       width: 159px;
       height: 44px;
     }
   }
-  &__address, &__phone {
-    span, a {
+
+  &__address,
+  &__phone {
+
+    span,
+    a {
       margin-right: 10px;
       font-style: normal;
       color: #33BB83;
     }
   }
+
   &-info {
     display: flex;
     align-items: center;
     margin-left: auto;
+
     &__element {
       display: flex;
       align-items: center;
+
       img {
         width: 16px;
         height: 16px;
       }
     }
+
     &__star {
       margin: 0 16px;
     }
   }
+
   &__address {
     &_mobile {
       display: none;
