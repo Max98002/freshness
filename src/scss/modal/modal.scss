@@ -11,57 +11,9 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   z-index: 99;
-  background: rgba(8, 79, 50, 0.3);
   opacity: 0;
+  background: rgba(8, 79, 50, 0.3);
   transform: scale(0.9);
-
-  &-order {
-    position: relative;
-    &__line {
-      position: relative;
-      display: block;
-      width: 104.6%;
-      height: 1px;
-      margin: 50px 0;
-      margin-left: -2.3%;
-      background: #D6E3B5;
-      &::after {
-        content: '';
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        width: 24px;
-        height: 24px;
-        transform: translateX(-50%);
-        background: url("../img/icons/icons.svg#star") no-repeat center / cover;
-      }
-    }
-    &__close {
-      position: absolute;
-      top: -50px;
-      right: -50px;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-      background: #F7FBEC;
-      &::after,&::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 40%;
-        height: 1px;
-        background-color: #000;
-        transform: translate(-50%, -50%);
-      }
-      &::after {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
-      &::before {
-        transform: translate(-50%, -50%) rotate(-45deg);
-      }
-    }
-  }
 
   &__wrap {
     flex-shrink: 0;
@@ -76,19 +28,75 @@
   }
 
   &__window {
-    padding: 32px 10px;
     margin: 50px 0;
     box-sizing: border-box;
     flex-shrink: 0;
     flex-grow: 0;
-    background: #fff;
-    width: 450px;
     max-width: 100%;
     overflow: visible;
     transition: transform .2s ease 0s, opacity .2s ease 0s;
     transform: scale(0.9);
     opacity: 0;
+  }
+
+  &-order {
+    position: relative;
+    padding: 32px 10px;
+    background: #fff;
+    width: 450px;
     border-radius: 40px;
+
+
+    &__line {
+      position: relative;
+      display: block;
+      width: 104.6%;
+      height: 1px;
+      margin: 50px 0;
+      margin-left: -2.3%;
+      background: #D6E3B5;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        transform: translateX(-50%);
+        background: url("../img/icons/icons.svg#star") no-repeat center / cover;
+      }
+    }
+
+    &__close {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background: #F7FBEC;
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40%;
+        height: 1px;
+        background-color: #000;
+        transform: translate(-50%, -50%);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
   }
 
   &__title {
@@ -149,15 +157,18 @@
     &__window {
       width: 90%;
     }
+
     &-order {
       &__close {
         top: -50px;
         right: 0;
       }
     }
+
     &__title {
       font-size: 32px;
     }
+
     &__subtitle {
       font-size: 18px;
     }

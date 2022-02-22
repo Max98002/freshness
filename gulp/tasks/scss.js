@@ -31,7 +31,7 @@ export const scss = () => {
 				app.isBuild,
 				autoprefixer({
 					grid: true,
-					overrideBrowserslist: ["last 3 versions"],
+					overrideBrowserslist: ["last 3 version"],
 					cascade: true
 				})
 			)
@@ -48,7 +48,7 @@ export const scss = () => {
 			)
 		)
 		// Раскомментировать если нужен не сжатый дубль файла стилей
-		.pipe(app.gulp.dest(app.path.build.css))
+		// .pipe(app.gulp.dest(app.path.build.css))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,

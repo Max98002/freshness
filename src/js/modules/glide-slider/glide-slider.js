@@ -12,18 +12,18 @@ const glide = new Glide(".glide", {
   // autoplay: 3000,
   hoverpause: true,
   animationDuration: 1000,
-  peek: {
-    before: 0,
-    after: 95
-  },
-  breakpoints: {
-    1040: {
-      peek: {
-        before: 0,
-        after: 0
-      },
-    }
-  }
+  // peek: {
+  //   before: 0,
+  //   after: 95
+  // },
+  // breakpoints: {
+  //   1040: {
+  //     peek: {
+  //       before: 0,
+  //       after: 0
+  //     },
+  //   }
+  // }
 });
 
 export { glide }

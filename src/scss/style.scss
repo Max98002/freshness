@@ -23,6 +23,7 @@ body {
   letter-spacing: -0.32px;
   background: #FDFFF8;
   color: #283505;
+  padding-top: 96px;
 }
 
 img,
@@ -102,6 +103,8 @@ input {
 
 //Стилі для модалки
 @import './modal/modal';
+//Cтилі для вікна подяки
+@import './thanks-block/thanks-block';
 
 .show {
   display: inherit;

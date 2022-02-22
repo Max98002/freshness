@@ -81,7 +81,7 @@
     }
 
     &__date {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 23px;
       line-height: 21px;
       letter-spacing: -0.32px;
@@ -123,8 +123,7 @@
     flex-flow: column nowrap;
     position: absolute;
     top: 50%;
-    // right: -24px;
-    right: 6%;
+    right: -24px;
     transform: translateY(-50%);
     row-gap: 24px;
   }
@@ -137,10 +136,12 @@
     background: #33BB83;
     border: 3px solid #FDFFF8;
     border-radius: 100%;
+
     img {
       width: 20px;
       height: 20px;
     }
+
     &--left {
       img {
         transform: rotate(180deg);
@@ -154,7 +155,6 @@
     justify-content: center;
     margin-top: 32px;
     column-gap: 12px;
-    padding-right: 96px;
   }
 
   &__bullet {
@@ -163,8 +163,11 @@
     height: 8px;
     background: #C0D58D;
     border-radius: 100%;
+
     &--active {
-      background-color: #748745;;
+      background-color: #748745;
+      ;
+
       &::before {
         content: '';
         position: absolute;

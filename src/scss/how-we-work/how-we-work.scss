@@ -24,7 +24,6 @@
     border: 1px solid #D6E3B5;
     border-radius: 400px;
     padding: 56px 64px;
-    // background: url("../img/how-we-work/how-we-work-main-img.png") no-repeat center / 75%;
     background-clip: content-box;
     transform: translateX(-50%);
     z-index: -1;
@@ -277,6 +276,10 @@
   .how-we-work {
     &-elements {
       width: 100%;
+      &__text {
+        width: 221px;
+        max-width: 100%;
+      }
     }
   }
 }

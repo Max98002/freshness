@@ -16,9 +16,7 @@
       right: -29px;
       width: 10px;
       height: 10px;
-      background-image: url("../img/icons/icons.svg#star");
-      background-repeat: no-repeat;
-      background-position: center;
+      background: url("../img/icons/icons.svg#star")no-repeat center / cover;
       transform: translateY(-50%);
     }
 
