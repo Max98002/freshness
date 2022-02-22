@@ -3,12 +3,19 @@ flsFunctions.isWebp();
 
 'use strict';
 
+
+import {
+  glide
+} from "./modules/glide-slider/glide-slider.js";
+
 import menu from "./modules/menu/menu.js";
-import { glide } from "./modules/glide-slider/glide-slider.js";
+import InitMask from './modules/mask/mask.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   menu('.btn-menu');
   glide.mount();
+
+  new InitMask('#phone').init();
 
   window.addEventListener('scroll', () => {
     let scroll = Math.round(document.documentElement.scrollTop);
