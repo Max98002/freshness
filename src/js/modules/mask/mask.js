@@ -47,6 +47,13 @@ export default class InitMask {
       input.addEventListener('input', this.createMask);
       input.addEventListener('focus', this.createMask);
       input.addEventListener('blur', this.createMask);
+
+      input.addEventListener('focus', () => {
+        document.querySelector('.hero-input__wrap').style.borderColor = '#748745';
+      });
+      input.addEventListener('blur', () => {
+        document.querySelector('.hero-input__wrap').style.borderColor = '#D6E3B5';
+      });
     });
   }
 }
