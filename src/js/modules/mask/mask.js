@@ -54,6 +54,7 @@ export default class InitMask {
       input.addEventListener('blur', () => {
         document.querySelector('.hero-input__wrap').style.borderColor = '#D6E3B5';
       });
+      
     });
   }
 }

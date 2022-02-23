@@ -10,7 +10,11 @@ export const html = () => {
 				message: "Error: <%= error.message %>"
 			}))
 		)
-		.pipe(fileInclude())
+		.pipe(fileInclude({
+			context: {
+				arr: ['test1', 'test2']
+			}
+		}))
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
 		// .pipe(
 		// 	app.plugins.if(

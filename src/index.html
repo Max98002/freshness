@@ -5,7 +5,53 @@
 })
 
 <body>
-	@@include('html/header.html',{})
+	<!-- @@include('html/header.html',{}) -->
+	<header class="header">
+
+		<a class="header__logo header__logo_other" href="index.html">
+			<img src="./img/icons/icons.svg#Logo" class="svg-Logo-dims" alt="Logo" />
+		</a>
+
+		<address class="header-info__element header__address header__address_mobile">
+			<img src="./img/icons/icons.svg#location" class="svg-location-dims" alt="location" />
+			<span class="fz_16px">Львів</span>
+		</address>
+
+		<a class="header__logo_mobile" href="index.html">
+			<img src="./img/icons/icons.svg#logo-mobile" class="svg-logo-mobile-dims" alt="logo-mobile" />
+		</a>
+
+		@@include('html/nav-main.html', {
+		"nav-text-one": "Послуги",
+		"nav-text-two": "Відгуки",
+		"nav-text-three": "Про нас",
+		"nav-text-four": "Контакти",
+		})
+
+		<div class="header-info">
+
+			<address class="header-info__element header__address">
+				<span class="fz_16px">Львів,Сихів</span>
+				<img src="./img/icons/icons.svg#location" class="svg-location-dims" alt="location" />
+			</address>
+
+			<img src="./img/icons/icons.svg#star" class="header-info__star svg-star-dims" alt="star" />
+
+			<div class="header-info__element header__phone">
+				<a class="fz_16px" href="tel:+380738080010">+ 380 (73) 80 800 10</a>
+				<img src="./img/icons/icons.svg#call" class="svg-call-dims" alt="call" />
+			</div>
+
+		</div>
+
+		<button class="btn-menu nav__link_menu">
+			<span class="btn-menu__line"></span>
+			<span class="btn-menu__line"></span>
+		</button>
+
+		<button class="btn btn__location btn__location_mobile">Шлях до хімчистки</button>
+
+	</header>
 
 	<section class="hero main-hero">
 		<h1 class="main-hero__title fz_90px">Позбавимо вас бруду</h1>
@@ -13,7 +59,7 @@
 		<div class="hero__sub main-hero__sub">
 
 			<form class="hero__order">
-				<div class="hero-input__wrap ">
+				<div class="hero-input__wrap">
 					<!-- hero-input_error -->
 					<span class="hero-input__left">+38</span>
 					<input type="text" class="hero-input__right" id="phone" placeholder="(000) 000-00-00">
@@ -51,7 +97,7 @@
 	</aside>
 
 	<main>
-		<section class="services">
+		<section id="services" class="services">
 			<div class="services__wrap">
 				<a href="carpets.html" class="services-block services__block">
 					<h3 class="services-block__title">Хімчистка <br> Килимів</h3>
@@ -224,223 +270,13 @@
 			</div>
 		</section>
 
-		<section class="customers">
-			<div class="customers__wrap">
-				<div class="customers-block">
-					<img src="./img/our-customers/1.png" alt="" class="customers-block__img customers-block__img_1">
-				</div>
-				<div class="customers-block">
-					<img src="./img/our-customers/2.png" alt="" class="customers-block__img customers-block__img_2">
-				</div>
-				<div class="customers-block">
-					<img src="./img/our-customers/3.png" alt="" class="customers-block__img customers-block__img_3">
-				</div>
-				<div class="customers-block">
-					<img src="./img/our-customers/4.png" alt="" class="customers-block__img customers-block__img_4">
-				</div>
-				<div class="customers-block">
-					<img src="./img/our-customers/5.png" alt="" class="customers-block__img customers-block__img_5">
-				</div>
-				<div class="customers-block">
-					<img src="./img/our-customers/6.png" alt="" class="customers-block__img customers-block__img_6">
-				</div>
-			</div>
-		</section>
+		@@include('html/customers.html', {})
 
 		@@include('html/customerFB.html', {});
 
-		<section class="section сleaning">
-			<h2 class="сleaning__title сleaning-title">Процес чистки</h2>
+		@@include('html/сleaning.html', {});
 
-			<ul class="сleaning__items">
-				<li class="сleaning__item">
-					<img src="./img/icons/icons.svg#cleaning-1" class="svg-cleaning-1" alt="cleaning-1" />
-					<span class="сleaning__text">Виводимо будь які плями</span>
-					<img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-				</li>
-				<li class="сleaning__item">
-					<img src="./img/icons/icons.svg#cleaning-4" class="svg-cleaning-4" alt="cleaning-4" />
-					<span class="сleaning__text">Позбавимо вас запаху</span>
-					<img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-				</li>
-				<li class="сleaning__item">
-					<img src="./img/icons/icons.svg#cleaning-2" class="svg-cleaning-2" alt="cleaning-2" />
-					<span class="сleaning__text">Озонація безкоштовно</span>
-					<img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-				</li>
-			</ul>
-
-			<ul class="сleaning__lines">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-
-		</section>
-
-		<section class="section means">
+		<section id="about" class="section means">
 			<h2 class="section-title section__title means__title">
 				Засоби які ми використовуємо
 			</h2>
@@ -481,28 +317,7 @@
 
 		</section>
 
-		<section class="section pay">
-			<h2 class="section-title section__title pay__title">
-				Способи оплати
-			</h2>
-			<p class="section-subtitle section__subtitle pay__subtitle">
-				Оплата здійснюється <span>після виконання</span> роботи
-			</p>
-
-			<div class="pay__wrap">
-				<div class="pay__block pay__left">
-					<h2 class="pay__text">Готівкою,Карткою</h2>
-				</div>
-
-				<div class="pay__center">
-					<span class="pay__center-text">або</span>
-				</div>
-
-				<div class="pay__block pay__right">
-					<h2 class="pay__text">По перерахунку</h2>
-				</div>
-			</div>
-		</section>
+		@@include('html/pay.html', {})
 	</main>
 
 	@@include('html/footer.html',{})

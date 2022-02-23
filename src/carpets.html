@@ -5,7 +5,52 @@
 })
 
 <body>
-  @@include('html/header.html',{})
+  <header class="header">
+
+    <a class="header__logo header__logo_other" href="index.html">
+      <img src="./img/icons/icons.svg#Logo" class="svg-Logo-dims" alt="Logo" />
+    </a>
+
+    <address class="header-info__element header__address header__address_mobile">
+      <img src="./img/icons/icons.svg#location" class="svg-location-dims" alt="location" />
+      <span class="fz_16px">Львів</span>
+    </address>
+
+    <a class="header__logo_mobile" href="index.html">
+      <img src="./img/icons/icons.svg#logo-mobile" class="svg-logo-mobile-dims" alt="logo-mobile" />
+    </a>
+
+    @@include('html/nav-another.html', {
+      "nav-text-one": "Вартість",
+      "nav-text-two": "Як ми працюємо",
+      "nav-text-three": "Відгуки",
+      "nav-text-four": "Контакти",
+    })
+
+    <div class="header-info">
+
+      <address class="header-info__element header__address">
+        <span class="fz_16px">Львів,Сихів</span>
+        <img src="./img/icons/icons.svg#location" class="svg-location-dims" alt="location" />
+      </address>
+
+      <img src="./img/icons/icons.svg#star" class="header-info__star svg-star-dims" alt="star" />
+
+      <div class="header-info__element header__phone">
+        <a class="fz_16px" href="tel:+380738080010">+ 380 (73) 80 800 10</a>
+        <img src="./img/icons/icons.svg#call" class="svg-call-dims" alt="call" />
+      </div>
+
+    </div>
+
+    <button class="btn-menu nav__link_menu">
+      <span class="btn-menu__line"></span>
+      <span class="btn-menu__line"></span>
+    </button>
+
+    <button class="btn btn__location btn__location_mobile">Шлях до хімчистки</button>
+
+  </header>
 
   <main>
     <section class="main-block">
@@ -82,7 +127,7 @@
       </div>
     </section>
 
-    <section class="section cost-cleaning">
+    <section id="price" class="section cost-cleaning">
       <h2 class="section-title section__title cost-cleaning__title">
         Вартість чистки
       </h2>
@@ -120,7 +165,8 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Маленькі килимки</h3>
-            <p class="cost-cleaning-products__size">50-100см<span class="cost-cleaning-products__dagger"></span>50-150см</p>
+            <p class="cost-cleaning-products__size">50-100см<span class="cost-cleaning-products__dagger"></span>50-150см
+            </p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -131,7 +177,8 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Журнальні килими</h3>
-            <p class="cost-cleaning-products__size">100-150см<span class="cost-cleaning-products__dagger"></span>100-200cм</p>
+            <p class="cost-cleaning-products__size">100-150см<span
+                class="cost-cleaning-products__dagger"></span>100-200cм</p>
             <span class="cost-cleaning-products__price">25-75</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -142,7 +189,8 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Середні килими</h3>
-            <p class="cost-cleaning-products__size">150-200см<span class="cost-cleaning-products__dagger"></span>200-300см</p>
+            <p class="cost-cleaning-products__size">150-200см<span
+                class="cost-cleaning-products__dagger"></span>200-300см</p>
             <span class="cost-cleaning-products__price">150-300</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -153,7 +201,8 @@
           </div>
           <div class="cost-cleaning-products__info">
             <h3 class="cost-cleaning-products__name">Великі килими</h3>
-            <p class="cost-cleaning-products__size">200см+<span class="cost-cleaning-products__dagger"></span>200-400см</p>
+            <p class="cost-cleaning-products__size">200см+<span class="cost-cleaning-products__dagger"></span>200-400см
+            </p>
             <span class="cost-cleaning-products__price">200-800</span>
             <span class="cost-cleaning-products__subprice">грн/шт</span>
           </div>
@@ -162,329 +211,62 @@
 
     </section>
 
-    <section class="section how-we-work">
-      <h2 class="section-title section__title how-we-work__title">Як ми працюємо</h2>
-      <div class="how-we-work__block">
-        <div class="how-we-work__main-block">
-          <span class="how-we-work__line"></span>
-          <img src="./img/how-we-work/how-we-work-main-img.png" alt="">
-        </div>
-        <ul class="how-we-work-elements">
-          <li class="how-we-work-elements__element">
-            <div class="how-we-work-elements__text">
-              <h3 class="how-we-work-elements__title">Зв’язуємось з вами</h3>
-              <p class="how-we-work-elements__subtitle how-we-work-elements__subtitle_top">Для уточнення дати, часу та
-                об’єму роботи</p>
-            </div>
-            <span class="how-we-work-elements__deco-num">01</span>
-          </li>
-          <li class="how-we-work-elements__element">
-            <div class="how-we-work-elements__text">
-              <h3 class="how-we-work-elements__title">Чистимо ваші меблі</h3>
-              <p class="how-we-work-elements__subtitle how-we-work-elements__subtitle_center">Приїжджаємо на вказану
-                вами адресу та знищуємо бруд</p>
-            </div>
-            <span class="how-we-work-elements__deco-num how-we-work-elements__deco-num_center">02</span>
-          </li>
-          <li class="how-we-work-elements__element">
-            <div class="how-we-work-elements__text">
-              <h3 class="how-we-work-elements__title">Сушка меблів</h3>
-              <p class="how-we-work-elements__subtitle how-we-work-elements__subtitle_bottom">Переважно меблі сохнуть
-                3-9 годин. Сушка в 3 рази пришвидшить цей
-                процес. Cушку,можна замовити, як додаткову послугу</p>
-            </div>
-            <span class="how-we-work-elements__deco-num
-            how-we-work-elements__deco-num_bottom">03</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+		@@include('html/how-we-work.html')
 
-    <section class="section pay">
-      <h2 class="section-title section__title pay__title">
-        Способи оплати
+    @@include('html/pay.html', {})
+
+    @@include('html/customers.html', {})
+
+    @@include('html/customerFB.html', {});
+
+		@@include('html/сleaning.html', {});
+
+    <section class="section means means__furniture">
+      <h2 class="section-title section__title means__title">
+        Засоби які ми використовуємо
       </h2>
-      <p class="section-subtitle section__subtitle pay__subtitle">
-        Оплата здійснюється <span>після виконання</span> роботи
-      </p>
-
-      <div class="pay__wrap">
-        <div class="pay__block pay__left">
-          <h2 class="pay__text">Готівкою,Карткою</h2>
+      <div class="means-wrap">
+        <div class="means-block">
+          <span class="means-block__circle means-block__circle_top"></span>
+          <span class="means-block__circle means-block__circle_bottom"></span>
+          <div class="means-block__img">
+            <img src="./img/means/means-img.png" alt="">
+          </div>
+        </div>
+        <div class="means-wrap-elements">
+          <div class="means-elements">
+            <div class="means-elements__element">
+              <h3 class="means-elements__title">Сертифікаовані</h3>
+              <img src="./img/icons/icons.svg#means-star-left" class="means-elements__icon means-elements__icon_violet"
+                alt="means-star-left" />
+            </div>
+            <div class="means-elements__element">
+              <h3 class="means-elements__title">Безпечні для дітей</h3>
+              <span class="means-elements__circle"></span>
+            </div>
+            <div class="means-elements__element">
+              <h3 class="means-elements__title">Гіпоалергенні</h3>
+              <img src="./img/icons/icons.svg#means-star-right" class="means-elements__icon means-elements__icon_green"
+                alt="means-star-right" />
+            </div>
+          </div>
         </div>
 
-        <div class="pay__center">
-          <span class="pay__center-text">або</span>
+        <div class="means__bottom means__bottom-left">
+          <img src="./img/means/means-left.png" alt="">
         </div>
-
-        <div class="pay__block pay__right">
-          <h2 class="pay__text">По перерахунку</h2>
-        </div>
-      </div>
-    </section>
-
-    <section class="customers">
-      <div class="customers__wrap">
-        <div class="customers-block">
-          <img src="./img/our-customers/1.png" alt="" class="customers-block__img customers-block__img_1">
-        </div>
-        <div class="customers-block">
-          <img src="./img/our-customers/2.png" alt="" class="customers-block__img customers-block__img_2">
-        </div>
-        <div class="customers-block">
-          <img src="./img/our-customers/3.png" alt="" class="customers-block__img customers-block__img_3">
-        </div>
-        <div class="customers-block">
-          <img src="./img/our-customers/4.png" alt="" class="customers-block__img customers-block__img_4">
-        </div>
-        <div class="customers-block">
-          <img src="./img/our-customers/5.png" alt="" class="customers-block__img customers-block__img_5">
-        </div>
-        <div class="customers-block">
-          <img src="./img/our-customers/6.png" alt="" class="customers-block__img customers-block__img_6">
+        <div class="means__bottom means__bottom-right">
+          <img src="./img/means/means-right.png" alt="">
         </div>
       </div>
-    </section>
-
-		@@include('html/customerFB.html', {});
-
-    <section class="section сleaning">
-      <h2 class="сleaning__title сleaning-title">Процес чистки</h2>
-
-      <ul class="сleaning__items">
-        <li class="сleaning__item">
-          <img src="./img/icons/icons.svg#cleaning-1" class="svg-cleaning-1" alt="cleaning-1" />
-          <span class="сleaning__text">Виводимо будь які плями</span>
-          <img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-        </li>
-        <li class="сleaning__item">
-          <img src="./img/icons/icons.svg#cleaning-4" class="svg-cleaning-4" alt="cleaning-4" />
-          <span class="сleaning__text">Позбавимо вас запаху</span>
-          <img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-        </li>
-        <li class="сleaning__item">
-          <img src="./img/icons/icons.svg#cleaning-2" class="svg-cleaning-2" alt="cleaning-2" />
-          <span class="сleaning__text">Озонація безкоштовно</span>
-          <img src="./img/icons/icons.svg#cleaning-3" class="svg-cleaning-3 сleaning__style_bottom" alt="cleaning-3" />
-        </li>
-      </ul>
-
-      <ul class="сleaning__lines">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
 
     </section>
-
-		<section class="section means means__furniture">
-			<h2 class="section-title section__title means__title">
-				Засоби які ми використовуємо
-			</h2>
-			<div class="means-wrap">
-				<div class="means-block">
-					<span class="means-block__circle means-block__circle_top"></span>
-					<span class="means-block__circle means-block__circle_bottom"></span>
-					<div class="means-block__img">
-						<img src="./img/means/means-img.png" alt="">
-					</div>
-				</div>
-				<div class="means-wrap-elements">
-					<div class="means-elements">
-						<div class="means-elements__element">
-							<h3 class="means-elements__title">Сертифікаовані</h3>
-							<img src="./img/icons/icons.svg#means-star-left" class="means-elements__icon means-elements__icon_violet"
-								alt="means-star-left" />
-						</div>
-						<div class="means-elements__element">
-							<h3 class="means-elements__title">Безпечні для дітей</h3>
-							<span class="means-elements__circle"></span>
-						</div>
-						<div class="means-elements__element">
-							<h3 class="means-elements__title">Гіпоалергенні</h3>
-							<img src="./img/icons/icons.svg#means-star-right" class="means-elements__icon means-elements__icon_green"
-								alt="means-star-right" />
-						</div>
-					</div>
-				</div>
-
-				<div class="means__bottom means__bottom-left">
-					<img src="./img/means/means-left.png" alt="">
-				</div>
-				<div class="means__bottom means__bottom-right">
-					<img src="./img/means/means-right.png" alt="">
-				</div>
-			</div>
-
-		</section>
   </main>
 
   @@include('html/footer.html',{})
   @@include('html/policy.html', {})
-	@@include('html/modal.html', {})
-	@@include('html/thanks-block.html', {})
+  @@include('html/modal.html', {})
+  @@include('html/thanks-block.html', {})
 
 
 
