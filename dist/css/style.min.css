@@ -659,7 +659,6 @@ input {
   width: 121px;
   min-width: 120px;
   height: 34px;
-  margin-right: 373px;
 }
 .header__logo_mobile {
   display: none;
@@ -669,6 +668,12 @@ input {
 .header__logo_menu {
   width: 159px;
   height: 44px;
+}
+.header__logo_index {
+  margin-right: 373px;
+}
+.header__logo_other {
+  margin-right: 341px;
 }
 .header__address span,
 .header__address a, .header__phone span,
@@ -1843,9 +1848,11 @@ input {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   padding: 0;
   margin: 0;
   list-style: none;
+  overflow: hidden;
 }
 .сleaning__lines li {
   height: 1px;
@@ -1874,6 +1881,7 @@ input {
 @media (max-width: 1040px) {
   .сleaning {
     margin: 0;
+    margin-bottom: 109px;
   }
   .сleaning__items {
     height: 109px;
@@ -1899,7 +1907,7 @@ input {
   .сleaning {
     position: relative;
     height: 395px;
-    margin-bottom: 550px;
+    margin-bottom: 460px;
   }
   .сleaning-title {
     font-size: 32px;
@@ -1926,6 +1934,7 @@ input {
   }
   .сleaning__item:last-child {
     margin: 0;
+    border-bottom: none;
   }
   .сleaning__item img {
     margin: 0;
@@ -2098,7 +2107,6 @@ input {
 
 @media (max-width: 1029px) {
   .means {
-    margin-top: 160px;
     margin-bottom: 120px;
   }
   .means__title {

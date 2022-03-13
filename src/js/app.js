@@ -3,7 +3,6 @@ flsFunctions.isWebp();
 
 'use strict';
 
-
 import {
   glide
 } from "./modules/glide-slider/glide-slider.js";
@@ -14,6 +13,7 @@ import scrolling from './modules/scroll/scroll.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   menu('.nav__link_menu');
+  
   glide.mount();
 
   new InitMask('#phone').init();

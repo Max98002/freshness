@@ -20,7 +20,7 @@
     width: 121px;
     min-width: 120px;
     height: 34px;
-    margin-right: 373px;
+
     &_mobile {
       display: none;
       width: 51px;
@@ -30,6 +30,13 @@
     &_menu {
       width: 159px;
       height: 44px;
+    }
+
+    &_index {
+      margin-right: 373px;
+    }
+    &_other {
+      margin-right: 341px;
     }
   }
 

@@ -13,6 +13,7 @@ export default function menu(btnSelector) {
   const btnLocationMobile = document.querySelector('.btn__location_mobile');
 
   menuBtn.forEach(menuBtn => {
+
     menuBtn.addEventListener('click', function () {
       if (!isOpen) {
         isOpen = true;
@@ -30,8 +31,12 @@ export default function menu(btnSelector) {
         // Коли меню відкрито додаємо клас для адрес hide
         addressMobile.classList.add('hide');
         // Коли меню відкрито додаємо клас show для лого
-        headerLogo.classList.add('show', 'header__logo_menu');
-        // Коли меню відкрито header отримує клас налаштуваннь для відкритого меню
+
+        if (document.documentElement.clientWidth <= 979) {
+          headerLogo.classList.add('show', 'header__logo_menu');
+          // Коли меню відкрито header отримує клас налаштуваннь для відкритого меню
+        }
+
         header.classList.add('header_menu');
         // Коли меню відкрито показуємо кнопку локації
         btnLocationMobile.classList.add('btn__location_mobile_active');
@@ -65,6 +70,7 @@ export default function menu(btnSelector) {
       }
       scrolling();
     });
+
   });
 
 };
