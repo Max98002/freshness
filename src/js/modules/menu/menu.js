@@ -35,11 +35,11 @@ export default function menu(btnSelector) {
         if (document.documentElement.clientWidth <= 979) {
           headerLogo.classList.add('show', 'header__logo_menu');
           // Коли меню відкрито header отримує клас налаштуваннь для відкритого меню
+          // Коли меню відкрито показуємо кнопку локації
+          btnLocationMobile.classList.add('btn__location_mobile_active');
         }
 
         header.classList.add('header_menu');
-        // Коли меню відкрито показуємо кнопку локації
-        btnLocationMobile.classList.add('btn__location_mobile_active');
 
       } else {
         isOpen = false;

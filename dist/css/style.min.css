@@ -1795,7 +1795,6 @@ input {
 }
 .сleaning {
   position: relative;
-  background: url("../img/сleaning/сleaning.png") no-repeat top/cover;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -1803,6 +1802,16 @@ input {
   height: 660px;
   padding: 0;
   margin-bottom: 104px;
+}
+.сleaning__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .сleaning-title {
   font-family: "Tenor Sans Regular";
@@ -1827,6 +1836,7 @@ input {
   margin: 0;
   list-style: none;
   background: linear-gradient(0deg, #001A0F 0%, rgba(1, 40, 24, 0) 100%);
+  z-index: 10;
 }
 .сleaning__item {
   height: 100%;
