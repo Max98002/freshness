@@ -28,6 +28,14 @@
   }
 }
 
+@media (max-width: 820px) {
+  .сleaning {
+    &__video {
+      z-index: 12;
+    }
+  }
+}
+
 @media (max-width: 740px) {
   .сleaning {
     position: relative;

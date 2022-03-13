@@ -1913,6 +1913,11 @@ input {
     display: none;
   }
 }
+@media (max-width: 820px) {
+  .сleaning__video {
+    z-index: 12;
+  }
+}
 @media (max-width: 740px) {
   .сleaning {
     position: relative;
