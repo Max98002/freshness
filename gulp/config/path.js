@@ -16,7 +16,7 @@ export const path = {
 	},
 	src: {
 		js: `${srcFolder}/js/app.js`,
-		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,mov}`,
+		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,mov,mp4,webm}`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`, //.pug
@@ -27,7 +27,7 @@ export const path = {
 		js: `${srcFolder}/js/**/*.js`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.html`, //.pug
-		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp,mov}`,
+		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp,mov,mp4,webm}`,
 		files: `${srcFolder}/files/**/*.*`
 	},
 	clean: buildFolder,
