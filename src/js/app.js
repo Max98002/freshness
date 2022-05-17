@@ -13,8 +13,11 @@ import scrolling from './modules/scroll/scroll.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   menu('.nav__link_menu');
-  
-  glide.mount();
+
+
+  if (document.querySelector('.glide')) {
+    glide.mount();
+  }
 
   new InitMask('#phone').init();
 
