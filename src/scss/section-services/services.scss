@@ -4,11 +4,16 @@
 
   &__wrap {
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 658px;
     grid-auto-rows: auto;
     align-items: flex-end;
     column-gap: 62px;
+    &_two-blocks {
+      grid-template-columns: 360px 360px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &-block {
@@ -131,6 +136,28 @@
     position: relative;
     border-radius: 400px;
 
+    max-height: 558px;
+    height: 100%;
+
+    &_large {
+      max-height: 620px;
+      height: 100%;
+      align-self: flex-start;
+    }
+    
+    &_carpet {
+      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-1.png") no-repeat center / cover;
+    }
+
+    &_furniture {
+      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-2.png") no-repeat center / cover;
+    }
+
+    &_auto {
+      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-3.png") no-repeat center / cover;
+    }
+
+
     &::before {
       content: '';
       position: absolute;
@@ -144,27 +171,6 @@
       z-index: -1;
     }
 
-    &:nth-child(1) {
-      max-height: 558px;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-1.png") no-repeat center / cover;
-    }
-
-    &:nth-child(2) {
-      max-height: 620px;
-      height: 100%;
-      align-self: flex-start;
-      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-2.png") no-repeat center / cover;
-      .star-2 {
-        right: 46px;
-      }
-    }
-
-    &:nth-child(3) {
-      max-height: 558px;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(18, 25, 0, 0.8) 0%, rgba(26, 35, 3, 0) 32.3%), url("../img/services-img/image-3.png") no-repeat center / cover;
-    }
   }
 }
 

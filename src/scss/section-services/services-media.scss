@@ -7,10 +7,13 @@
       grid-template-rows: 475px;
       align-items: center;
       column-gap: 40px;
+      &_two-blocks {
+        grid-template-columns: repeat(2, 310px);
+      }
     }
 
     &__block {
-      &:nth-child(2) {
+      &_large {
         align-self: auto;
       }
     }
@@ -23,6 +26,9 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 475px;
       column-gap: 30px;
+      &_two-blocks {
+        grid-template-columns: repeat(2, 310px);
+      }
     }
   }
 }
@@ -41,6 +47,9 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 450px;
       column-gap: 20px;
+      &_two-blocks {
+        grid-template-columns: repeat(2, 310px);
+      }
     }
 
     &-block {
@@ -98,7 +107,7 @@
     }
 
     &__block {
-      &:nth-child(2) {
+      &_large {
         order: -1;
       }
     }
