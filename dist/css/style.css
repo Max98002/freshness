@@ -3644,6 +3644,9 @@ input {
   .modal__window {
     width: 90%;
   }
+  .modal-order {
+    width: 100%;
+  }
   .modal-order__close {
     top: -50px;
     right: 0;
